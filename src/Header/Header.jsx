@@ -162,8 +162,9 @@ const navigation = {
     },
   ],
   pages: [
-    { name: "Company", href: "#" },
-    { name: "Stores", href: "#" },
+    { name: "პარტნიორები", href: "#" },
+    { name: "ჩვენ შესახებ", href: "#" },
+    { name: "კონტაქტი", href: "#" },
   ],
 };
 
@@ -361,7 +362,10 @@ export default function Example() {
               </div>
 
               {/* Flyout menus */}
-              <PopoverGroup className="hidden lg:ml-8 lg:block lg:self-stretch">
+              <PopoverGroup
+                className="hidden lg:ml-8 lg:block lg:self-stretch"
+                style={{ fontFamily: "tkt" }}
+              >
                 <div className="flex h-full space-x-8">
                   {navigation.categories.map((category) => (
                     <Popover key={category.name} className="flex">
