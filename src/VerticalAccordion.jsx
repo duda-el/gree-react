@@ -12,7 +12,8 @@ const VerticalAccordion = () => {
 
   return (
     <section className="p-4" style={{ fontFamily: "tkt" }}>
-      <div className="flex flex-col lg:flex-row h-fit lg:h-[450px] w-full max-w-6xl mx-auto shadow overflow-hidden">
+      <div className="flex flex-col lg:flex-row h-fit lg:h-[450px] w-full max-w-6xl mx-auto shadow overflow-hidden"
+      style={{position: "relative", zIndex: "-1"}}>
         {items.map((item) => {
           return (
             <Panel

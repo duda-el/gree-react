@@ -38,10 +38,14 @@ import logo from "../img/Gree-Logo.png";
 import eng from "../img/eng.png";
 
 const navigation = {
+  pages:[
+    { name: "მთავარი", href: "#" },
+    { name: "ჩვენ შესახებ", href: "#" },
+  ],
   categories: [
     {
-      id: "home",
-      name: "მთავარი",
+      id: "partners",
+      name: "პარტნიორები",
       featured: [
         {
           name: "New Arrivals",
@@ -161,9 +165,7 @@ const navigation = {
       ],
     },
   ],
-  pages: [
-    { name: "პარტნიორები", href: "#" },
-    { name: "ჩვენ შესახებ", href: "#" },
+  page: [
     { name: "კონტაქტი", href: "#" },
   ],
 };
@@ -211,6 +213,20 @@ export default function Example() {
                     <span className="sr-only">Close menu</span>
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </button>
+                </div>
+
+                
+                <div className="space-y-6 border-t border-gray-200 px-4 py-6">
+                  {navigation.pages.map((page) => (
+                    <div key={page.name} className="flow-root">
+                      <a
+                        href={page.href}
+                        className="-m-2 block p-2 font-medium text-gray-900"
+                      >
+                        {page.name}
+                      </a>
+                    </div>
+                  ))}
                 </div>
 
                 {/* Links */}
@@ -301,7 +317,7 @@ export default function Example() {
                 </TabGroup>
 
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
-                  {navigation.pages.map((page) => (
+                  {navigation.page.map((page) => (
                     <div key={page.name} className="flow-root">
                       <a
                         href={page.href}
@@ -340,6 +356,7 @@ export default function Example() {
         <nav
           aria-label="Top"
           className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
+          style={{position: "relative"}}
         >
           <div className="border-b border-gray-200">
             <div className="flex h-16 items-center">
@@ -367,6 +384,15 @@ export default function Example() {
                 style={{ fontFamily: "tkt" }}
               >
                 <div className="flex h-full space-x-8">
+                {navigation.pages.map((page) => (
+                    <a
+                      key={page.name}
+                      href={page.href}
+                      className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                    >
+                      {page.name}
+                    </a>
+                  ))}
                   {navigation.categories.map((category) => (
                     <Popover key={category.name} className="flex">
                       {({ open }) => (
@@ -475,7 +501,7 @@ export default function Example() {
                     </Popover>
                   ))}
 
-                  {navigation.pages.map((page) => (
+                  {navigation.page.map((page) => (
                     <a
                       key={page.name}
                       href={page.href}
