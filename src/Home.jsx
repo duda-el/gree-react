@@ -6,10 +6,11 @@ import Swiper from "./slider/Slider";
 function Home() {
   return (
     <div>
-        <Header/>
-        <Swiper/>
-
-        <VerticalAccordion/>
+      <Header />
+      <div className="spacing">
+        <Swiper />
+        {/* <VerticalAccordion /> */}
+      </div>
     </div>
   );
 }
