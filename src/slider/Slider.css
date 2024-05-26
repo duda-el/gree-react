@@ -11,15 +11,13 @@
   justify-content: center;
   height: 100%;
   box-sizing: border-box;
-  background-color: rgba(138, 138, 138, 0.5); /* Blue background with opacity */
-  width: 600px; /* Adjust width as needed */
+  background-color: rgba(138, 138, 138, 0.5); 
+  width: 600px;
   padding: 20px;
   border-radius: 10px;
   border: 2px solid white;
-
-  /* Apply mirror-like effect */
   backdrop-filter: blur(5px) contrast(1.2);
-  -webkit-backdrop-filter: blur(5px) contrast(1.2); /* For Safari */
+  -webkit-backdrop-filter: blur(5px) contrast(1.2);
 }
 
 .title {
