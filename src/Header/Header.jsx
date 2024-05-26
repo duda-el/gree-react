@@ -356,7 +356,7 @@ export default function Example() {
         <nav
           aria-label="Top"
           className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
-          style={{position: "relative"}}
+          style={{position: "relative", zIndex: "999"}}
         >
           <div className="border-b border-gray-200">
             <div className="flex h-16 items-center">
