@@ -1,0 +1,132 @@
+.latest_news_section{
+    padding-top: 40px;
+  }
+  
+  .latest_news_section>.latest_news_section_title{
+    font-family: 'TKT-Regular';
+    font-size: 16px;
+    color: white;
+  }
+  
+  .latest_news_section> .latest_news_wrapper{
+   margin-top: 20px;
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .latest_news_section{
+      padding-top: 40px;
+  
+    }
+    
+    .latest_news_section> .controller_wrapper{
+      display: flex;
+  
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .latest_news_section_title{
+      color: white;
+      font-size: 22px;
+    }
+    .latest_news_section> .controller_wrapper> .buttons{
+      display: flex;
+  
+      justify-content: center;
+      gap: 8px;
+      align-items: center;
+    }
+    
+    .latest_news_section> .latest_news_wrapper{
+     margin-top: 20px;
+    }
+  
+    .mySwiper{
+      height: 370px;
+    }
+  
+   .swiper-nav-buttons{
+    display: flex;
+    align-items: center;
+    
+    gap: 8px;
+   }
+  
+    .slider_button{
+      border: 1px solid rgba(128, 128, 128, 0.2);
+      border-radius: 8px;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  
+  
+  
+  /* .latest_news_slider_container > .latest_news_wrapper {
+    width: calc(100% - 20px);
+    height: auto;
+    display: flex;
+    gap: 40px;
+  }
+  
+  .latest_news_slider_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: calc(100% - 20px);
+  }
+  
+  .latest_news_slider_container > .slider_title_button {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+  }
+  
+  .slider_title_button > .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .slider_title_button > h2 {
+    color: white;
+    padding-left: 10px;
+    font-size: 22px;
+  }
+  
+  .buttons > .previous_arrow {
+    width: 40px;
+    height: 40px;
+    background-color: none;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .buttons > .previous_arrow > img {
+    transform: rotate(90deg);
+  }
+  
+  .buttons > .next_arrow {
+    width: 40px;
+    height: 40px;
+    background-color: none;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .buttons > .next_arrow > img {
+    transform: rotate(-90deg);
+  } */
+  
+  
+  

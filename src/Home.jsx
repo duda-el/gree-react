@@ -2,15 +2,15 @@ import React from "react";
 import VerticalAccordion from "./VerticalAccordion";
 import Header from "./Header/Header";
 import Swiper from "./slider/Slider";
-
+import Products from "./Card/index"
 function Home() {
   return (
     <div>
       <Header />
-      <div className="spacing">
+      <main className="spacing">
         <Swiper />
-        {/* <VerticalAccordion /> */}
-      </div>
+        <Products/>
+      </main>
     </div>
   );
 }

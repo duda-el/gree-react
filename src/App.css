@@ -8,7 +8,12 @@
   src: url("/public/Fonts/TKT-MEDIUM.TTF") format("truetype");
 }
 
-.swiper {
+@font-face {
+  font-family: "Helvetica";
+  src: url("/public/Fonts/HelveticaNeue-Medium.ttf") format("truetype");
+}
+
+/* .swiper {
   width: 80%;
   height: 100%;
   background: #000;
@@ -46,8 +51,16 @@
   font-size: 14px;
   max-width: 400px;
   line-height: 1.3;
-}
+} */
 
 .spacing{
-  padding-inline: 10vw;
+  padding-inline: 6.25vw;
+}
+
+.swiper-button-prev{
+  display: none !important;
+}
+
+.swiper-button-next{
+  display: none !important;
 }
