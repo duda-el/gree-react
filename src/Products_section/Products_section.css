@@ -1,9 +1,28 @@
 .section_title{
-  /* background-color: red; */
-  margin-top: 200px;
+  font-family: "tkt-medium";
+  font-size: 25px;
 }
 
 .products_slider{
   width: 100%;
   height: auto;
+}
+
+.controller_wrapper{
+  display: flex;
+  padding-top: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.swiper-nav-buttons{
+  display: flex;
+  gap: 10px;
+}
+
+.slider_button{
+  border: 2px solid black;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
 }

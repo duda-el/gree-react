@@ -10,14 +10,14 @@ export default function Card(src, description) {
       <div className="content">
         <h3 className="title">Mixer HM0293</h3>
         <ul className="description">
-          <li>Color:</li>
-          <li>Number of gear:</li>
-          <li>Power:</li>
-          <li>Warranty:</li>
+          <li>ტიპი:</li>
+          <li>ფერი:</li>
+          <li>სიმძლავრე:</li>
+          <li>მასალა:</li>
         </ul>
         <p className="model_number">Model:Number</p>
-        <h6 className="price">Price:</h6>
-        <button className="add_to_cart">Add to cart</button>
+        <h6 className="price">ფასი:</h6>
+        <button className="add_to_cart">სრულად ნახვა</button>
       </div>
       
     </div>

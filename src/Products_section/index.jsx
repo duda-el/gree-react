@@ -19,7 +19,7 @@ export default function ProductsSection() {
           ?
           (
             <>
-              <h2 className="section_title">კონდიციონერები</h2>
+              <h2 className="section_title">საოჯახო ტექნიკა</h2>
               <Swiper
                 breakpoints={{
                   320: {
@@ -56,7 +56,7 @@ export default function ProductsSection() {
           (
             <>
               <div className="controller_wrapper">
-                <h2 className="section_title">უახლესი ამბები</h2>
+                <h2 className="section_title">საოჯახო ტექნიკა</h2>
                 <div className="swiper-nav-buttons">
                   <button ref={prevRef} className="slider_button">p</button>
                   <button ref={nextRef} className="slider_button">n</button>
