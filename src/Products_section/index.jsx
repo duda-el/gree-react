@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Autoplay, Navigation } from 'swiper/modules';
+import arrow from "../img/arrow-drop-down-line.svg"
 
 export default function ProductsSection() {
   const isMobile = useIsMobile();
@@ -58,8 +59,8 @@ export default function ProductsSection() {
               <div className="controller_wrapper">
                 <h2 className="section_title">საოჯახო ტექნიკა</h2>
                 <div className="swiper-nav-buttons">
-                  <button ref={prevRef} className="slider_button">p</button>
-                  <button ref={nextRef} className="slider_button">n</button>
+                  <button ref={prevRef} className="slider_button"><img src={arrow} alt="arrow" style={{transform: "rotate(90deg)"}}/></button>
+                  <button ref={nextRef} className="slider_button"><img src={arrow} alt="arrow" style={{transform: "rotate(-90deg)"}}/></button>
                 </div>
               </div>
                 <Swiper
