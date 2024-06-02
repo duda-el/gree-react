@@ -36,6 +36,8 @@ import {
 } from "@heroicons/react/24/outline";
 import logo from "../img/Gree-Logo.png";
 import eng from "../img/eng.png";
+import "./Header.css"
+import arrow from "../img/arrow-drop-down-line.svg"
 
 const navigation = {
   pages:[
@@ -224,6 +226,7 @@ export default function Example() {
                         className="-m-2 block p-2 font-medium text-gray-900"
                       >
                         {page.name}
+                        
                       </a>
                     </div>
                   ))}
@@ -348,7 +351,7 @@ export default function Example() {
         </Dialog>
       </Transition>
 
-      <header className="relative bg-white">
+      <header className="relative bg-white shadow-lg">
         <p className="flex h-10 items-center justify-center bg-customBlue px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
           Get free delivery on orders over $100
         </p>
@@ -358,7 +361,7 @@ export default function Example() {
           className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
           style={{position: "relative", zIndex: "999"}}
         >
-          <div className="border-b border-gray-200">
+          <div className="py-2 border-gray-200 item">
             <div className="flex h-16 items-center">
               <button
                 type="button"
@@ -391,6 +394,11 @@ export default function Example() {
                       className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
                     >
                       {page.name}
+                      <img
+                        src={arrow}
+                        alt="dropdown"
+                        className="ml-1 w-6 h-auto opacity-0"
+                      />
                     </a>
                   ))}
                   {navigation.categories.map((category) => (
