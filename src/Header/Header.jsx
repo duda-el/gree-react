@@ -36,11 +36,11 @@ import {
 } from "@heroicons/react/24/outline";
 import logo from "../img/Gree-Logo.png";
 import eng from "../img/eng.png";
-import "./Header.css"
-import arrow from "../img/arrow-drop-down-line.svg"
+import "./Header.css";
+import arrow from "../img/arrow-drop-down-line.svg";
 
 const navigation = {
-  pages:[
+  pages: [
     { name: "მთავარი", href: "#" },
     { name: "ჩვენ შესახებ", href: "#" },
   ],
@@ -167,9 +167,7 @@ const navigation = {
       ],
     },
   ],
-  page: [
-    { name: "კონტაქტი", href: "#" },
-  ],
+  page: [{ name: "კონტაქტი", href: "#" }],
 };
 
 function classNames(...classes) {
@@ -217,7 +215,6 @@ export default function Example() {
                   </button>
                 </div>
 
-                
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
@@ -226,7 +223,6 @@ export default function Example() {
                         className="-m-2 block p-2 font-medium text-gray-900"
                       >
                         {page.name}
-                        
                       </a>
                     </div>
                   ))}
@@ -359,7 +355,7 @@ export default function Example() {
         <nav
           aria-label="Top"
           className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
-          style={{position: "relative", zIndex: "999"}}
+          style={{ position: "relative", zIndex: "999" }}
         >
           <div className="py-2 border-gray-200 item">
             <div className="flex h-16 items-center">
@@ -387,18 +383,13 @@ export default function Example() {
                 style={{ fontFamily: "tkt" }}
               >
                 <div className="flex h-full space-x-8">
-                {navigation.pages.map((page) => (
+                  {navigation.pages.map((page) => (
                     <a
                       key={page.name}
                       href={page.href}
                       className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
                     >
                       {page.name}
-                      <img
-                        src={arrow}
-                        alt="dropdown"
-                        className="ml-1 w-6 h-auto opacity-0"
-                      />
                     </a>
                   ))}
                   {navigation.categories.map((category) => (
@@ -415,6 +406,14 @@ export default function Example() {
                               )}
                             >
                               {category.name}
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill={open ? "#3B82F6" : "currentColor"} // Change color on active state
+                                className="ml-1 w-6 h-auto transition-colors duration-200 ease-out" // Add transition for color change
+                              >
+                                <path d="M12 15.0006L7.75732 10.758L9.17154 9.34375L12 12.1722L14.8284 9.34375L16.2426 10.758L12 15.0006Z" />
+                              </svg>
                             </PopoverButton>
                           </div>
 
