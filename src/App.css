@@ -64,3 +64,11 @@
 .swiper-button-next{
   display: none !important;
 }
+
+
+
+@media only screen and (min-width: 2530px) {
+  .spacing{
+    padding-inline: 26vw;
+  }
+}

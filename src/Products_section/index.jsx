@@ -24,12 +24,16 @@ export default function ProductsSection() {
               <Swiper
                 breakpoints={{
                   320: {
-                    slidesPerView: 'auto',
-                    spaceBetween: 20
+                    slidesPerView: 1,
+                    spaceBetween: 50
                   },
                   425: {
-                    slidesPerView: 1.2,
-                    spaceBetween: 30
+                    slidesPerView: 1.3,
+                    spaceBetween: 55
+                  },
+                  570: {
+                    slidesPerView: 1.6,
+                    spaceBetween: 55
                   }
                 }}
                 pagination={{
@@ -76,16 +80,17 @@ export default function ProductsSection() {
                   className="mySwiper products_slider"
                   breakpoints={{
                     768: {
-                      slidesPerView: 2,
-                      // spaceBetween: 15
+                      slidesPerView: 2.1,
+                      spaceBetween: 20
+                      
+                    },
+                    1024: {
+                      slidesPerView: 2.5,
+                      spaceBetween: 20
                     },
                     1440: {
-                      slidesPerView: 4,
-                      spaceBetween: '100px'
-                    },
-                    2048: {
-                      slidesPerView: 6,
-                      spaceBetween: '100px'
+                      slidesPerView: 3.5,
+                      spaceBetween: 20
                     }
                   }}
                 >
