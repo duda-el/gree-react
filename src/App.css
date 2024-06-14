@@ -13,6 +13,9 @@
   src: url("/public/Fonts/HelveticaNeue-Medium.ttf") format("truetype");
 }
 
+body{
+  min-height: 100vh;
+}
 /* .swiper {
   width: 80%;
   height: 100%;

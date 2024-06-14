@@ -7,20 +7,14 @@ export default function Card(src, description) {
 
   return (
     <div className="card">
-      <div className="img_wrapper"></div>
+      <div className="img_wrapper"><div className="img_container"></div></div>
       <div className="content">
-        <h3 className="title">Mixer HM0293</h3>
-        <ul className="description">
-          <li>ტიპი:</li>
-          <li>ფერი:</li>
-          <li>სიმძლავრე:</li>
-          <li>მასალა:</li>
-        </ul>
-        <p className="model_number">Model:Number</p>
-        <h6 className="price">ფასი:</h6>
-        <button className="add_to_cart">სრულად ნახვა</button>
+        <p className="price">3000₾</p>
+        <p className="product_name"> Sumo 75 XL Powerful Desert Air Cooler 75-litres</p>
+        <p className="stat1">სიმძლავრე: <span style={{fontWeight: '600'}}>200W</span></p>
+        <p className="stat2">გაგრილების დიაპაზონი: <span style={{fontWeight: '600'}}>18°C - 24°C</span></p>
       </div>
-      
+      <button className="add_to_cart">სრულად ნახვა</button>
     </div>
   );
 }

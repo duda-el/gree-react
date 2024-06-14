@@ -14,7 +14,7 @@ export default function ProductsSection() {
   const nextRef = useRef(null);
 
   return (
-    <section className="product_section">
+    <section className="product_section" style={{maxHeight: '2000px'}}>
       {
         isMobile
           ?
@@ -25,17 +25,23 @@ export default function ProductsSection() {
                 breakpoints={{
                   320: {
                     slidesPerView: 1,
-                    spaceBetween: 50
+                    spaceBetween: 10,
                   },
                   425: {
-                    slidesPerView: 1.3,
-                    spaceBetween: 55
+                    slidesPerView: 1.2,
+                    spaceBetween: 15,
                   },
                   570: {
-                    slidesPerView: 1.6,
-                    spaceBetween: 55
-                  }
+                    slidesPerView: 1.5,
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 2.1,
+                    spaceBetween: 20,
+                  },
+                 
                 }}
+                
                 pagination={{
                   clickable: true,
                 }}
@@ -79,19 +85,18 @@ export default function ProductsSection() {
                   modules={[Navigation]}
                   className="mySwiper products_slider"
                   breakpoints={{
-                    768: {
-                      slidesPerView: 2.1,
-                      spaceBetween: 20
-                      
-                    },
                     1024: {
                       slidesPerView: 2.5,
-                      spaceBetween: 20
+                      spaceBetween: 20,
                     },
                     1440: {
                       slidesPerView: 3.5,
-                      spaceBetween: 20
-                    }
+                      spaceBetween: 20,
+                    },
+                    1920: {
+                      slidesPerView: 4.5,
+                      spaceBetween: 25,
+                    },
                   }}
                 >
                   <SwiperSlide key={2}><Card /></SwiperSlide>

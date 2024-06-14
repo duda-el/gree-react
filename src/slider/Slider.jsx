@@ -49,7 +49,7 @@ export default function App() {
               (
                 <>
                  <img src={conditioner1} alt="conditioner" />
-                 <h1>a</h1>
+           
                 </>
               )
             }
@@ -66,7 +66,7 @@ export default function App() {
               (
                 <>
                  <img src={conditioner2} alt="conditioner" />
-                 <h1>a</h1>
+             
                 </>
               )
             }
@@ -83,7 +83,7 @@ export default function App() {
               (
                 <>
                  <img src={conditioner3} alt="conditioner" />
-                 <h1>a</h1>
+                 
                 </>
               )
             }
