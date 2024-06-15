@@ -20,7 +20,7 @@ export default function ProductsSection() {
           ?
           (
             <>
-              <h2 className="section_title">საოჯახო ტექნიკა</h2>
+              <h2 className="section_title">Top პროდუქცია</h2>
               <Swiper
                 breakpoints={{
                   320: {
@@ -67,7 +67,7 @@ export default function ProductsSection() {
           (
             <>
               <div className="controller_wrapper">
-                <h2 className="section_title">საოჯახო ტექნიკა</h2>
+                <h2 className="section_title">Top პროდუქცია</h2>
                 <div className="swiper-nav-buttons">
                   <button ref={prevRef} className="slider_button"><img src={arrow} alt="arrow" style={{transform: "rotate(90deg)"}}/></button>
                   <button ref={nextRef} className="slider_button"><img src={arrow} alt="arrow" style={{transform: "rotate(-90deg)"}}/></button>

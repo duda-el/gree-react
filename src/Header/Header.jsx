@@ -355,7 +355,7 @@ export default function Example() {
         <nav
           aria-label="Top"
           className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
-          style={{ position: "relative", zIndex: "999" }}
+          style={{ position: "relative", zIndex: "2" }}
         >
           <div className="py-2 border-gray-200 item">
             <div className="flex h-16 items-center">
@@ -387,7 +387,7 @@ export default function Example() {
                     <a
                       key={page.name}
                       href={page.href}
-                      className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                      className="flex items-center text-md font-medium text-gray-700 hover:text-gray-800"
                     >
                       {page.name}
                     </a>
@@ -402,7 +402,7 @@ export default function Example() {
                                 open
                                   ? "border-indigo-600 text-indigo-600"
                                   : "border-transparent text-gray-700 hover:text-gray-800",
-                                "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
+                                "relative z-10 -mb-px flex items-center border-b-2 pt-px text-md font-medium transition-colors duration-200 ease-out"
                               )}
                             >
                               {category.name}
@@ -512,7 +512,7 @@ export default function Example() {
                     <a
                       key={page.name}
                       href={page.href}
-                      className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                      className="flex items-center text-md font-medium text-gray-700 hover:text-gray-800"
                     >
                       {page.name}
                     </a>
