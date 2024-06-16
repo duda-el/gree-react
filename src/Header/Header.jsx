@@ -37,7 +37,9 @@ import {
 import logo from "../img/Gree-Logo.png";
 import eng from "../img/eng.png";
 import "./Header.css";
-import arrow from "../img/arrow-drop-down-line.svg";
+import phone from "../img/phone-volume-solid.svg"
+import location from "../img/location-dot-solid.svg"
+import envelope from "../img/envelope-solid.svg"
 
 const navigation = {
   pages: [
@@ -348,9 +350,20 @@ export default function Example() {
       </Transition>
 
       <header className="relative bg-white shadow-lg">
-        <p className="flex h-10 items-center justify-center bg-customBlue px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
-          Get free delivery on orders over $100
-        </p>
+          <div className="blue-header-container">
+            <div className="info-container">
+              <img src={phone} alt="Phone Icon" className="icon" />
+              <h3 className="info-text">+995 592 55 33 22</h3>
+            </div>
+            <div className="info-container">
+              <img src={envelope} alt="Location Icon" className="icon" />
+              <h3 className="info-text">gree.georgia@gmail.com</h3>
+            </div>
+            <div className="info-container">
+              <img src={location} alt="Location Icon" className="icon" />
+              <h3 className="info-text">საქ. თბილისი. ოთარ ჭილაძის 302</h3>
+            </div>
+          </div>
 
         <nav
           aria-label="Top"
@@ -400,7 +413,7 @@ export default function Example() {
                             <PopoverButton
                               className={classNames(
                                 open
-                                  ? "border-indigo-600 text-indigo-600"
+                                  ? "border-customLightBlue text-customLightBlue"
                                   : "border-transparent text-gray-700 hover:text-gray-800",
                                 "relative z-10 -mb-px flex items-center border-b-2 pt-px text-md font-medium transition-colors duration-200 ease-out"
                               )}
@@ -409,7 +422,7 @@ export default function Example() {
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
-                                fill={open ? "#3B82F6" : "currentColor"} // Change color on active state
+                                fill={open ? "#1268f1" : "currentColor"} // Change color on active state
                                 className="ml-1 w-6 h-auto transition-colors duration-200 ease-out" // Add transition for color change
                               >
                                 <path d="M12 15.0006L7.75732 10.758L9.17154 9.34375L12 12.1722L14.8284 9.34375L16.2426 10.758L12 15.0006Z" />

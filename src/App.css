@@ -13,7 +13,7 @@
   src: url("/public/Fonts/HelveticaNeue-Medium.ttf") format("truetype");
 }
 
-body{
+body {
   min-height: 100vh;
 }
 /* .swiper {
@@ -56,22 +56,70 @@ body{
   line-height: 1.3;
 } */
 
-.spacing{
+.spacing {
   padding-inline: 6.25vw;
 }
 
-.swiper-button-prev{
+.swiper-button-prev {
   display: none !important;
 }
 
-.swiper-button-next{
+.swiper-button-next {
   display: none !important;
 }
 
+.blue-header-container {
+  width: 100%;
+  height: auto;
+  background: #00337a;
+  padding: 10px;
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
+.info-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  width: 13px;
+  height: auto;
+}
+
+.info-text {
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "tkt", sans-serif;
+}
 
 @media only screen and (min-width: 2530px) {
-  .spacing{
+  .spacing {
     padding-inline: 26vw;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .blue-header-container {
+    justify-content: center;
+    padding-left: 5px;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .info-container {
+    text-align: center;
+  }
+
+  .icon {
+    width: 10px;
+  }
+
+  .info-text {
+    font-size: 12px;
   }
 }
