@@ -97,6 +97,10 @@ export default function ProductsSection() {
                       slidesPerView: 4.5,
                       spaceBetween: 25,
                     },
+                    2530: {
+                      slidesPerView: 4,
+                      spaceBetween: 25
+                    }
                   }}
                 >
                   <SwiperSlide key={2}><Card /></SwiperSlide>
