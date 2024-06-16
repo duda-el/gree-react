@@ -9,7 +9,7 @@ function Home() {
   return (
     <div>
       <Header />
-      <main className="spacing">
+      <main className="spacing" style={{minHeightheight: '90vh'}}>
         <Swiper />
         <ProductsSection />
         <News />
