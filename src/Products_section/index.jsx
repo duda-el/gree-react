@@ -44,6 +44,7 @@ export default function ProductsSection() {
                   clickable: true,
                 }}
                 modules={[Autoplay, Navigation]}
+                
                 autoplay={{
                   delay: 2500,
                   disableOnInteraction: false,
