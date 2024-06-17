@@ -26,6 +26,7 @@ export default function ProductsSection() {
                   320: {
                     slidesPerView: 1,
                     spaceBetween: 10,
+                    touchMove: true,
                   },
                   425: {
                     slidesPerView: 1.2,
