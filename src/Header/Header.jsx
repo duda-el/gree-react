@@ -12,7 +12,7 @@
   }
   ```
 */
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect } from "react";
 import {
   Dialog,
   DialogPanel,
@@ -37,9 +37,11 @@ import {
 import logo from "../img/Gree-Logo.png";
 import eng from "../img/eng.png";
 import "./Header.css";
-import phone from "../img/phone-volume-solid.svg"
-import location from "../img/location-dot-solid.svg"
-import envelope from "../img/envelope-solid.svg"
+import phone from "../img/phone-volume-solid.svg";
+import location from "../img/location-dot-solid.svg";
+import envelope from "../img/envelope-solid.svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const navigation = {
   pages: [
@@ -179,6 +181,10 @@ function classNames(...classes) {
 export default function Example() {
   const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <div className="bg-white" style={{ fontFamily: "tkt" }}>
       {/* Mobile menu */}
@@ -240,7 +246,7 @@ export default function Example() {
                           className={({ selected }) =>
                             classNames(
                               selected
-                                ? "border-indigo-600 text-indigo-600"
+                                ? "border-customLightBlue text-customLightBlue"
                                 : "border-transparent text-gray-900",
                               "flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium"
                             )
@@ -349,21 +355,25 @@ export default function Example() {
         </Dialog>
       </Transition>
 
-      <header className="relative bg-white shadow-lg">
-          <div className="blue-header-container">
-            <div className="info-container">
-              <img src={phone} alt="Phone Icon" className="icon" />
-              <h3 className="info-text">+995 592 55 33 22</h3>
-            </div>
-            <div className="info-container">
-              <img src={envelope} alt="Location Icon" className="icon" />
-              <h3 className="info-text">gree.georgia@gmail.com</h3>
-            </div>
-            <div className="info-container">
-              <img src={location} alt="Location Icon" className="icon" />
-              <h3 className="info-text">საქ. თბილისი. ოთარ ჭილაძის 302</h3>
-            </div>
+      <header
+        className="relative bg-white shadow-lg"
+        data-aos="slide-down"
+        data-aos-duration="1000"
+      >
+        <div className="blue-header-container">
+          <div className="info-container">
+            <img src={phone} alt="Phone Icon" className="icon" />
+            <h3 className="info-text">+995 592 55 33 22</h3>
           </div>
+          <div className="info-container">
+            <img src={envelope} alt="Location Icon" className="icon" />
+            <h3 className="info-text">gree.georgia@gmail.com</h3>
+          </div>
+          <div className="info-container">
+            <img src={location} alt="Location Icon" className="icon" />
+            <h3 className="info-text">საქ. თბილისი. ოთარ ჭილაძის 302</h3>
+          </div>
+        </div>
 
         <nav
           aria-label="Top"
@@ -447,7 +457,7 @@ export default function Example() {
 
                               <div className="relative bg-white">
                                 <div className="mx-auto max-w-7xl px-8">
-                                  <div className="grid grid-cols-2 gap-x-8 gap-y-10 py-16">
+                                  <div className="grid grid-cols-2 gap-x-8 gap-y-10 py-4">
                                     <div className="col-start-2 grid grid-cols-2 gap-x-8">
                                       {category.featured.map((item) => (
                                         <div
