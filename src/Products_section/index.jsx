@@ -46,7 +46,7 @@ export default function ProductsSection() {
                 modules={[Autoplay, Navigation]}
                 autoplay={{
                   delay: 2500,
-                  disableOnInteraction: false,
+                  disableOnInteraction: true,
                 }}
                 navigation={true}
                 allowTouchMove={true}
