@@ -20,7 +20,7 @@ export default function ProductsSection() {
           ?
           (
             <>
-              <h2 className="section_title">Top პროდუქცია</h2>
+              <h2 className="section_title">Top პროდუქციაa</h2>
               <Swiper
                 breakpoints={{
                   320: {
