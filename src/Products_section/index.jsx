@@ -3,10 +3,17 @@ import Card from "../Card/index";
 import "./Products_section.css";
 import useIsMobile from "../hooks/resize";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore from 'swiper';
+import { Autoplay,  Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Autoplay, Navigation } from 'swiper/modules';
+import 'swiper/swiper-bundle.css';
+import 'swiper/css/autoplay';
+import 'swiper/css/scrollbar';
+
 import arrow from "../img/arrow-drop-down-line.svg"
+
+SwiperCore.use([Autoplay, Navigation]);
 
 export default function ProductsSection() {
   const isMobile = useIsMobile();
@@ -45,12 +52,18 @@ export default function ProductsSection() {
                 pagination={{
                   clickable: true,
                 }}
-                modules={[Autoplay, Navigation]}
+                direction="horizontal" // Change to "horizontal" for horizontal scrolling
+                // scrollbar={{ draggable: true }}
                 autoplay={{
-                  delay: 2500,
-                  disableOnInteraction: false,
+                    delay: 1000, // Adjust the delay for autoplay
+                    disableOnInteraction: false,
                 }}
+<<<<<<< HEAD
                 navigation={true}
+=======
+                navigation
+                
+>>>>>>> test
                 className="mySwiper products_slider"
               >
                 <SwiperSlide key={1}><Card /></SwiperSlide>
