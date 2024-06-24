@@ -58,12 +58,8 @@ export default function ProductsSection() {
                     delay: 1000, // Adjust the delay for autoplay
                     disableOnInteraction: false,
                 }}
-<<<<<<< HEAD
-                navigation={true}
-=======
                 navigation
                 
->>>>>>> test
                 className="mySwiper products_slider"
               >
                 <SwiperSlide key={1}><Card /></SwiperSlide>
