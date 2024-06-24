@@ -111,6 +111,15 @@ export default function ProductsSection() {
                       spaceBetween: 25
                     }
                   }}
+                  pagination={{
+                    clickable: true,
+                  }}
+                  direction="horizontal" // Change to "horizontal" for horizontal scrolling
+                  // scrollbar={{ draggable: true }}
+                  autoplay={{
+                      delay: 1000, // Adjust the delay for autoplay
+                      disableOnInteraction: true,
+                  }}
                 >
                   <SwiperSlide key={2}><Card /></SwiperSlide>
                   <SwiperSlide key={1}><Card /></SwiperSlide>
