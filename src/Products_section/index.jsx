@@ -56,7 +56,7 @@ export default function ProductsSection() {
                 // scrollbar={{ draggable: true }}
                 autoplay={{
                     delay: 1000, // Adjust the delay for autoplay
-                    disableOnInteraction: false,
+                    disableOnInteraction: true,
                 }}
                 navigation
                 
