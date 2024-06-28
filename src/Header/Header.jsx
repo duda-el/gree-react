@@ -26,15 +26,15 @@ import "./Header.css";
 import phone from "../img/phone-volume-solid.svg";
 import location from "../img/location-dot-solid.svg";
 import envelope from "../img/envelope-solid.svg";
-
+import { Link } from "react-router-dom";
 
 const navigation = {
   pages: [
-    { name: "მთავარი", href: "#" },
-    { name: "ჩვენ შესახებ", href: "#" },
+    { name: "მთავარი", href: "/" },
+    { name: "ჩვენ შესახებ", href: "/about" },
     { name: "პროდუქცია", href: "#" },
     { name: "სერვისები", href: "#" },
-    { name: "კონტაქტი", href: "#" },
+    { name: "კონტაქტი", href: "/contact" },
   ],
 };
 

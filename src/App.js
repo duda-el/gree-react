@@ -4,6 +4,9 @@ import './App.css';
 import Home from './Home';
 import AboutUs from './AboutUs';
 import Loader from './Loader';
+import Contact from './Contact';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -21,8 +24,11 @@ function App() {
         <Loader loading={loading} />
       ) : (
         <>
-          <Home />
-          <AboutUs />
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/about' element={<AboutUs/>}/>
+            <Route path='/contact' element={<Contact/>}/>
+          </Routes>
         </>
       )}
     </div>
