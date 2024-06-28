@@ -4,7 +4,7 @@
   /* height: auto; */
   margin-top: 40px;
   border-radius: 5px;
-  z-index: -1;
+  z-index: -5 !important;
 }
 
 
@@ -13,14 +13,3 @@ img {
   width: 100%;
   height: auto;
 }
-
-
-
-/* @media only screen and (min-width: 1024px) {
- 
-  .slide {
-    position: relative;
-  }
-
-
-} */

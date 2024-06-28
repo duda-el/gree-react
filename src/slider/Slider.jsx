@@ -4,8 +4,6 @@ import useIsMobile from "../hooks/resize";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './Slider.css';
-import 'aos/dist/aos.css'; // Import AOS styles
-import AOS from 'aos'; // Import AOS library
 
 import { Autoplay, Pagination } from 'swiper/modules';
 import conditioner1 from '../img/conditioner1.webp';
@@ -15,17 +13,6 @@ import conditioner3 from '../img/conditioner3.webp';
 export default function App() {
   const isMobile = useIsMobile();
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Customize the animation duration here
-      once: true, // Animation should happen only once
-    });
-
-    // Trigger AOS refresh after loading
-    setTimeout(() => {
-      AOS.refresh();
-    }, 100);
-  }, []);
 
   return (
     <div className="app-container">
@@ -41,7 +28,6 @@ export default function App() {
         }}
         modules={[Autoplay, Pagination]}
         className="mySwiper"
-        data-aos="zoom-in"
       >
         <SwiperSlide className='slide'>
           {
