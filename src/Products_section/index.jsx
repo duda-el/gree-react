@@ -55,7 +55,7 @@ export default function ProductsSection() {
                 direction="horizontal" // Change to "horizontal" for horizontal scrolling
                 // scrollbar={{ draggable: true }}
                 autoplay={{
-                    delay: 1000, // Adjust the delay for autoplay
+                    delay: 2500, // Adjust the delay for autoplay
                     disableOnInteraction: true,
                 }}
                 navigation
@@ -117,7 +117,7 @@ export default function ProductsSection() {
                   direction="horizontal" // Change to "horizontal" for horizontal scrolling
                   // scrollbar={{ draggable: true }}
                   autoplay={{
-                      delay: 1000, // Adjust the delay for autoplay
+                      delay: 2000, // Adjust the delay for autoplay
                       disableOnInteraction: true,
                   }}
                 >
