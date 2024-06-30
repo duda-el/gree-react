@@ -25,7 +25,7 @@
   width: 100%;
   height: 100%;
 
-  background-color: #d4d4d4;
+  background-color: #ffffff;
 }
 
 .content{
@@ -42,7 +42,7 @@
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1;
-  color: #00337a;
+  color: #1e40af;
 }
 
 .product_name{
@@ -74,7 +74,7 @@
 }
 
 .add_to_cart{
-  background-color: #00337a;
+  background-color: #1e40af;
   width: 100%;
   height: 49.7px;
   color: white;
@@ -109,7 +109,7 @@
     width: 100%;
     height: 100%;
   
-    background-color: #d4d4d4;
+    background-color: #ffffff;
   }
   
   .content{
@@ -125,7 +125,7 @@
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1;
-    color: #00337a;
+    color: #1e40af;
     
   }
   
@@ -161,7 +161,7 @@
   }
   
   .add_to_cart{
-    background-color: #00337a;
+    background-color: #1e40af;
     width: 100%;
     height: 28px;
     color: white;
@@ -197,7 +197,7 @@
     width: 100%;
     height: 100%;
   
-    background-color: #d4d4d4;
+    background-color: #ffffff;
   }
   
   .content{
@@ -213,7 +213,7 @@
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1;
-    color: #00337a;
+    color: #1e40af;
   }
   
   .product_name{
@@ -274,7 +274,7 @@
     width: 100%;
     height: 100%;
   
-    background-color: #d4d4d4;
+    background-color: #ffffff;
   }
   
   .content{
@@ -290,7 +290,7 @@
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1;
-    color: #00337a;
+    color: #1e40af;
   }
   
   .product_name{
@@ -322,7 +322,7 @@
   }
   
   .add_to_cart{
-    background-color: #00337a;
+    background-color: #1e40af;
     width: 100%;
     height: 40.4px;
   }

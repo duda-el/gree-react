@@ -5,7 +5,7 @@
 
 .section_title{
   font-family: "tkt-medium";
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .products_slider{
@@ -27,7 +27,7 @@
 
 .slider_button{
   width: 40px;
-  background-color: #00337a;
+  background-color: #1e40af;
   height: 40px;
   border-radius: 8px;
   display: flex;
@@ -36,5 +36,6 @@
 }
 
 .slider_button:active{
-  border: 1px solid #00337a;
+  border: 1px solid #1e40af;
 }
+
