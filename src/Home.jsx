@@ -1,10 +1,10 @@
 import React from "react";
-import VerticalAccordion from "./VerticalAccordion";
 import Header from "./Header/Header";
 import Swiper from "./slider/Slider";
 import ProductsSection from "./Products_section";
 import News from "./News";
 import BtuCalculator from "./BtuCalculator";
+import Footer from "./Footer";
 
 function Home() {
   return (
@@ -18,6 +18,7 @@ function Home() {
       <div className="spacing">
         <News />
       </div>
+      <Footer />
     </div>
   );
 }

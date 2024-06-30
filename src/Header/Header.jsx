@@ -116,7 +116,7 @@ export default function Example() {
       </Transition>
 
       <header
-        className="relative bg-white shadow-lg"
+        className="relative bg-white border-b-2 border-blue-800"
       >
         <div className="blue-header-container">
           <div className="info-container">
@@ -169,7 +169,7 @@ export default function Example() {
                   <a
                     key={page.name}
                     href={page.href}
-                    className="text-md font-medium text-gray-700 hover:text-gray-800"
+                    className="text-base font-medium text-gray-700 hover:text-gray-800"
                   >
                     {page.name}
                   </a>
@@ -182,7 +182,7 @@ export default function Example() {
                     href="#"
                     className="flex items-center text-gray-700 hover:text-gray-800"
                   >
-                    <span className="mr-3 block text-md font-medium">ENG</span>
+                    <span className="mr-3 block text-base font-medium">ENG</span>
                     <img
                       src={eng}
                       alt=""
