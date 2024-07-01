@@ -41,8 +41,7 @@ const BtuCalculator = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screenp-4 py-10 my-10"
-      style={{ fontFamily: "tkt", backgroundColor: "#f9f9f9" }}>
+    <div className="flex flex-col items-center justify-center min-h-screen p-4 py-10 my-10" style={{ fontFamily: "tkt", backgroundColor: "#f9f9f9" }}>
       <h1 className="text-4xl text-center font-bold text-blue-800 mb-6">BTU კალკულატორი</h1>
       <p className="text-lg text-gray-700 mb-8 text-center max-w-lg">
         გამოთვალეთ თქვენი ოთახის კონდიციონერის სიმძლავრე ჩვენი BTU კალკულატორით. შეიყვანეთ საჭირო დეტალები და გაარკვიეთ სრულყოფილი BTU რეიტინგი ოპტიმალური გათბობის ან გაგრილებისთვის.
@@ -119,3 +118,4 @@ const BtuCalculator = () => {
 };
 
 export default BtuCalculator;
+  
