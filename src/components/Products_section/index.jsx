@@ -11,7 +11,7 @@ import 'swiper/swiper-bundle.css';
 import 'swiper/css/autoplay';
 import 'swiper/css/scrollbar';
 
-import arrow from "../img/arrow-drop-down-line.svg"
+import arrow from "../../img/arrow-drop-down-line.svg"
 
 SwiperCore.use([Autoplay, Navigation]);
 

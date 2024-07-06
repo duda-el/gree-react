@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import flow from "./img/air-flow.jpg";
+import flow from "../img/air-flow.jpg";
 
 const BtuCalculator = () => {
   const [roomSize, setRoomSize] = useState('');

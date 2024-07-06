@@ -20,12 +20,12 @@ import {
   ShoppingBagIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import logo from "../img/Gree-Logo.png";
-import eng from "../img/eng.png";
+import logo from "../../img/Gree-Logo.png";
+import eng from "../../img/eng.png";
 import "./Header.css";
-import phone from "../img/phone-volume-solid.svg";
-import location from "../img/location-dot-solid.svg";
-import envelope from "../img/envelope-solid.svg";
+import phone from "../../img/phone-volume-solid.svg";
+import location from "../../img/location-dot-solid.svg";
+import envelope from "../../img/envelope-solid.svg";
 import { Link } from "react-router-dom";
 
 const navigation = {

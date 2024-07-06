@@ -1,6 +1,6 @@
 import "./Card.css";
 import useIsMobile from "../hooks/resize";
-import cond from "../img/cond.jpg"
+import cond from "../../img/cond.jpg"
 
 export default function Card(src, description) {
   const isMobile = useIsMobile();

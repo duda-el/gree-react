@@ -6,9 +6,9 @@ import 'swiper/css/pagination';
 import './Slider.css';
 
 import { Autoplay, Pagination } from 'swiper/modules';
-import conditioner1 from '../img/conditioner1.webp';
-import conditioner2 from '../img/conditioner2.webp';
-import conditioner3 from '../img/conditioner3.webp';
+import conditioner1 from '../../img/conditioner1.webp';
+import conditioner2 from '../../img/conditioner2.webp';
+import conditioner3 from '../../img/conditioner3.webp';
 
 export default function App() {
   const isMobile = useIsMobile();
