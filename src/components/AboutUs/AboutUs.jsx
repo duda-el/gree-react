@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../Header/Header";
-import video from "../../videos/aboutus.mp4";
+import video from "../../img/video.mp4";
 import "./AboutUs.css";
 
 function AboutUs() {
