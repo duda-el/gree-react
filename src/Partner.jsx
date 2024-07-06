@@ -33,7 +33,7 @@ const partners = [
 const Partners = () => {
   return (
     <div className="partners-section">
-      <h2 className="partners-title">ჩვენი პარტნიორი კომპანიები</h2>
+      {/* <h2 className="partners-title">ჩვენი პარტნიორი კომპანიები</h2> */}
       <div className="partners-container">
         <Swiper
           spaceBetween={30}
