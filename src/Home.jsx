@@ -6,6 +6,7 @@ import News from "./News";
 import BtuCalculator from "./BtuCalculator";
 import Footer from "./Footer";
 import PartnerCompanies from "./Partner";
+import AboutCompany from "./AboutCompany ";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
         <Swiper />
         <ProductsSection />
       </main>
+      <AboutCompany />
       <BtuCalculator />
       <div className="spacing">
         <PartnerCompanies />
