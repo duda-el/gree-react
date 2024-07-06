@@ -1,11 +1,10 @@
 // App.js
-import React, { useState, useEffect } from 'react';
-import './App.css';
-import Home from './Home';
-import AboutUs from './AboutUs';
-import Loader from './Loader';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import Home from "./components/Home";
+import AboutUs from "../src/components/AboutUs/AboutUs";
+import Loader from "./components/Loader";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -24,8 +23,8 @@ function App() {
       ) : (
         <>
           <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='/about' element={<AboutUs/>}/>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutUs />} />
           </Routes>
         </>
       )}
