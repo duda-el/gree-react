@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../Header/Header";
-import video from "../../img/video.mp4";
+import video from "../../videos/aboutus.mp4";
 import "./AboutUs.css";
 
 function AboutUs() {
@@ -8,7 +8,7 @@ function AboutUs() {
     <div>
       <Header />
       <div className="overlay-container">
-        <video autoPlay loop muted className="overlay-video">
+        <video autoPlay loop muted playsInline className="overlay-video">
           <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
