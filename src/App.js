@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Home from "./components/Home";
 import AboutUs from "../src/components/AboutUs/AboutUs";
+import ProductsPage from "../src/components/ProductsPage/Product"
 import Loader from "./components/Loader";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -25,6 +26,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutUs />} />
+            <Route path="/products" element={<ProductsPage />} />
           </Routes>
         </>
       )}

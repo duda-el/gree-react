@@ -32,7 +32,7 @@ const navigation = {
   pages: [
     { name: "მთავარი", href: "/" },
     { name: "ჩვენ შესახებ", href: "/about" },
-    { name: "პროდუქცია", href: "#" },
+    { name: "პროდუქცია", href: "products" },
     { name: "სერვისები", href: "#" },
     { name: "კონტაქტი", href: "/contact" },
   ],
@@ -103,10 +103,6 @@ export default function Example() {
                       alt=""
                       className="block h-auto w-6 flex-shrink-0"
                     />
-                    <span className="ml-3 block text-base font-medium text-gray-900">
-                      ENG
-                    </span>
-                    <span className="sr-only">, change currency</span>
                   </a>
                 </div>
               </DialogPanel>
@@ -182,7 +178,6 @@ export default function Example() {
                     href="#"
                     className="flex items-center text-gray-700 hover:text-gray-800"
                   >
-                    <span className="mr-3 block text-base font-medium">ENG</span>
                     <img
                       src={eng}
                       alt=""
