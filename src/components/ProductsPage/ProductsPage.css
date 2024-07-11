@@ -60,3 +60,37 @@
 .relative span {
   right: 0.5rem; /* Adjust this value to position the Lari symbol correctly */
 }
+
+/* New CSS */
+select {
+  outline: none; /* Remove default outline */
+  border: 1px solid #1268f1; /* Light gray border */
+  padding: 0.5rem;
+  font-family: "tkt";
+  transition: border-color 0.2s ease;
+  appearance: none; /* Remove default dropdown arrow */
+  background-color: #fff; /* Ensure background color is white */
+  cursor: pointer; /* Add pointer cursor to select */
+}
+
+select:focus {
+  border-color: #1268f1; /* Blue border when focused */
+}
+
+select:hover {
+  border-color: #1268f1; /* Blue border on hover */
+}
+
+select option {
+  cursor: pointer; /* Make dropdown options have a pointer cursor */
+}
+
+select::-ms-expand {
+  display: none; /* Remove dropdown arrow in IE */
+}
+
+/* Custom dropdown arrow */
+.select-container {
+  position: relative;
+}
+
