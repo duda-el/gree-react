@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Card from "../Card/index";
+import Card from "../Card/Card1";
 import "./Products_section.css";
 import useIsMobile from "../hooks/resize";
 import { Swiper, SwiperSlide } from 'swiper/react';

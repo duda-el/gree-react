@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "src": "path/to/cond1.jpg",
+    "price": "3000₾",
+    "product_name": "Sumo 75 XL Powerful Desert Air Cooler 75-litres",
+    "power": "200BTU",
+    "cooling_range": "18°C - 24°C",
+    "description": "A powerful air cooler with a large water tank and efficient cooling technology.",
+    "model_name": "GREE LOMO"
+  },
+  {
+    "id": 2,
+    "src": "path/to/cond2.jpg",
+    "price": "2500₾",
+    "product_name": "BreezeMax 50 Medium Desert Air Cooler 50-litres",
+    "power": "150BTU",
+    "cooling_range": "20°C - 26°C",
+    "description": "Medium-sized air cooler ideal for small to medium-sized rooms.",
+    "model_name": "GREE U-CROWN"
+  },
+  {
+    "id": 3,
+    "src": "path/to/cond3.jpg",
+    "price": "4000₾",
+    "product_name": "Arctic Pro 100 XL Ultra Air Cooler 100-litres",
+    "power": "300BTU",
+    "cooling_range": "16°C - 22°C",
+    "description": "Ultra-large air cooler with maximum cooling capacity for large spaces.",
+    "model_name": "GREE SOYAL"
+  },
+  {
+    "id": 4,
+    "src": "path/to/cond4.jpg",
+    "price": "3500₾",
+    "product_name": "ChillWave 65 Large Desert Air Cooler 65-litres",
+    "power": "220BTU",
+    "cooling_range": "19°C - 25°C",
+    "description": "Large air cooler with advanced features for efficient cooling.",
+    "model_name": "GREE FAIRY"
+  },
+  {
+    "id": 5,
+    "src": "path/to/cond5.jpg",
+    "price": "2700₾",
+    "product_name": "CoolBreeze 45 Compact Desert Air Cooler 45-litres",
+    "power": "130BTU",
+    "cooling_range": "21°C - 27°C",
+    "description": "Compact air cooler perfect for small spaces and easy mobility.",
+    "model_name": "GREE AMBER"
+  }
+]

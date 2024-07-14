@@ -1,20 +1,29 @@
-import "./Card.css";
-import useIsMobile from "../hooks/resize";
-import cond from "../../img/cond.jpg"
+// Card.js
+import React from 'react';
+import './Card.css'; // Adjust path as per your file structure
+import { Link } from 'react-router-dom';
 
-export default function Card(src, description) {
-  const isMobile = useIsMobile();
+const Card = ({ product }) => {
+  if (!product) {
+    return null; // Optionally handle case where product data is undefined
+  }
 
   return (
     <div className="card">
-      <div className="img_wrapper"><div className="img_container"><img src={cond} alt="" srcset="" /></div></div>
-      <div className="content">
-        <p className="price">3000₾</p>
-        <p className="product_name"> Sumo 75 XL Powerful Desert Air Cooler 75-litres</p>
-        <p className="stat1">სიმძლავრე: <span style={{fontWeight: '600'}}>200BTU</span></p>
-        <p className="stat2">გაგრილების დიაპაზონი: <span style={{fontWeight: '600'}}>18°C - 24°C</span></p>
+      <div className="img_wrapper">
+        <img src={product.image} alt={product.product_name} />
       </div>
-      <button className="add_to_cart">სრულად ნახვა</button>
+      <div className="content">
+        <p className="price">{product.price}</p>
+        <p className="product_name">{product.product_name}</p>
+        <p className="stat1">სიმძლავრე: <span style={{ fontWeight: '600' }}>{product.power}</span></p>
+        <p className="stat2">გაგრილების დიაპაზონი: <span style={{ fontWeight: '600' }}>{product.cooling_range}</span></p>
+      </div>
+      <Link to={`/product/${product.id}`}>
+        <button className="add_to_cart">სრულად ნახვა</button>
+      </Link>
     </div>
   );
 }
+
+export default Card;
