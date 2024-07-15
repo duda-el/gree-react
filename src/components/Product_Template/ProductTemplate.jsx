@@ -7,14 +7,23 @@ import "./ProductTemplate.css";
 function ProductTemplate() {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
+  const [similarProducts, setSimilarProducts] = useState([]);
 
   useEffect(() => {
     // Fetch product data from JSON file
     fetch('/products.json')
       .then(response => response.json())
       .then(data => {
-        const product = data.find(p => p.id === parseInt(id));
-        setProduct(product);
+        const currentProduct = data.find(p => p.id === parseInt(id));
+        if (currentProduct) {
+          setProduct(currentProduct);
+
+          // Filter similar products based on model_name
+          const filteredProducts = data.filter(p => p.model_name === currentProduct.model_name && p.id !== currentProduct.id);
+          setSimilarProducts(filteredProducts);
+        } else {
+          console.error('Product not found');
+        }
       })
       .catch(error => console.error('Error fetching product data:', error));
   }, [id]);
@@ -57,6 +66,24 @@ function ProductTemplate() {
           </div>
         </div>
       </div>
+
+      {/* Similar Products Section */}
+      {similarProducts.length > 0 && (
+        <div className="similar-products">
+          <h2>მსგავსი პროდუქტები:</h2>
+          <div className="product-list">
+            {similarProducts.map((similarProduct) => (
+              <div key={similarProduct.id} className="similar-product">
+                <img src={similarProduct.src} alt={similarProduct.product_name} />
+                <p className="price">{similarProduct.price}</p>
+                <p className="product_name">{similarProduct.product_name}</p>
+                <p className="availability">ხელმისაწვდომობა: {similarProduct.availability}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       <Footer />
     </>
   );

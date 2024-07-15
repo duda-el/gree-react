@@ -103,5 +103,68 @@
     "availability": "In Stock",
     "warranty": "1 year",
     "manufacturer": "CoolBreeze Co."
+  },
+  {
+    "id": 6,
+    "src": "path/to/cond6.jpg",
+    "price": "3200₾",
+    "product_name": "SuperCool 80 High Capacity Desert Air Cooler 80-litres",
+    "power": "250BTU",
+    "cooling_range": "15°C - 20°C",
+    "description": "High capacity air cooler suitable for large rooms and high temperatures.",
+    "model_name": "GREE LOMO",
+    "brand": "SuperCool",
+    "weight": "22kg",
+    "dimensions": "80x50x40 cm",
+    "features": ["Extra large water tank", "Digital display", "Remote control"],
+    "reviews": [
+      { "user": "Lisa Green", "rating": 5, "comment": "Amazing cooling performance!" },
+      { "user": "Michael Brown", "rating": 4, "comment": "Great for hot summers." }
+    ],
+    "availability": "In Stock",
+    "warranty": "2 years",
+    "manufacturer": "SuperCool Inc."
+  },
+  {
+    "id": 7,
+    "src": "path/to/cond7.jpg",
+    "price": "2800₾",
+    "product_name": "EcoBreeze 55 Eco-Friendly Desert Air Cooler 55-litres",
+    "power": "160BTU",
+    "cooling_range": "22°C - 28°C",
+    "description": "Environmentally friendly air cooler with energy-saving features.",
+    "model_name": "GREE U-CROWN",
+    "brand": "EcoBreeze",
+    "weight": "14kg",
+    "dimensions": "55x40x30 cm",
+    "features": ["Energy-efficient motor", "Bio-cooling pads", "Quiet operation"],
+    "reviews": [
+      { "user": "Sophia White", "rating": 4, "comment": "Great for eco-conscious users." },
+      { "user": "David Black", "rating": 3, "comment": "Could be quieter but efficient." }
+    ],
+    "availability": "Out of Stock",
+    "warranty": "1 year",
+    "manufacturer": "EcoBreeze Ltd."
+  },
+  {
+    "id": 8,
+    "src": "path/to/cond8.jpg",
+    "price": "3900₾",
+    "product_name": "MegaCool 110 Premium Desert Air Cooler 110-litres",
+    "power": "350BTU",
+    "cooling_range": "14°C - 19°C",
+    "description": "Premium air cooler with advanced cooling technology and sleek design.",
+    "model_name": "GREE SOYAL",
+    "brand": "MegaCool",
+    "weight": "25kg",
+    "dimensions": "110x60x50 cm",
+    "features": ["Ultra-fast cooling", "Touchscreen controls", "Low noise operation"],
+    "reviews": [
+      { "user": "Olivia Green", "rating": 5, "comment": "Impressive cooling capacity!" },
+      { "user": "James Brown", "rating": 4, "comment": "Expensive but worth it." }
+    ],
+    "availability": "Limited Stock",
+    "warranty": "3 years",
+    "manufacturer": "MegaCool Technologies"
   }
 ]
