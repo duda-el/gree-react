@@ -10,8 +10,8 @@ const Products = () => {
   const [selectedModels, setSelectedModels] = useState([]);
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(10000);
-  const [isFilterVisible, setIsFilterVisible] = useState(false); // State for filter visibility
-  const [sortOrder, setSortOrder] = useState('asc'); // State for sorting order
+  const [isFilterVisible, setIsFilterVisible] = useState(true); // Start with filter visible by default on desktop
+  const [sortOrder, setSortOrder] = useState('name-asc'); // State for sorting order
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -43,10 +43,17 @@ const Products = () => {
 
   // Sort products based on sortOrder
   const sortedProducts = filteredProducts.sort((a, b) => {
-    if (sortOrder === 'asc') {
-      return a.product_name.localeCompare(b.product_name);
-    } else {
-      return b.product_name.localeCompare(a.product_name);
+    switch (sortOrder) {
+      case 'name-asc':
+        return a.product_name.localeCompare(b.product_name);
+      case 'name-desc':
+        return b.product_name.localeCompare(a.product_name);
+      case 'price-asc':
+        return parseFloat(a.price.replace('₾', '')) - parseFloat(b.price.replace('₾', ''));
+      case 'price-desc':
+        return parseFloat(b.price.replace('₾', '')) - parseFloat(a.price.replace('₾', ''));
+      default:
+        return 0;
     }
   });
 
@@ -72,7 +79,7 @@ const Products = () => {
     setMaxPrice(max);
   };
 
-  // Toggle filter visibility
+  // Toggle filter visibility on mobile and tablet
   const toggleFilterVisibility = () => {
     setIsFilterVisible(!isFilterVisible);
   };
@@ -82,14 +89,33 @@ const Products = () => {
     setSortOrder(e.target.value);
   };
 
+  // Determine screen size to decide visibility
+  useEffect(() => {
+    const handleResize = () => {
+      const isMobileOrTablet = window.innerWidth < 1024; // Adjust breakpoint as needed
+      if (!isMobileOrTablet) {
+        setIsFilterVisible(true); // Always show filter on desktop
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Initial check on component mount
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div>
       <Header />
+      {/* Toggle button for mobile and tablet */}
       <button className="filter-toggle-button" onClick={toggleFilterVisibility}>
         {isFilterVisible ? 'Hide Filters' : 'Show Filters'}
       </button>
       <div className="flex for_filter">
-        {isFilterVisible && (
+        {/* Filter section */}
+        <div className={`w-1/4 ${!isFilterVisible ? 'hidden' : ''}`}>
           <Filter
             onSearch={handleSearch}
             products={products}
@@ -104,12 +130,15 @@ const Products = () => {
               setMaxPrice(10000);
             }}
           />
-        )}
+        </div>
+        {/* Product grid */}
         <div className="w-3/4 p-4">
-          <div className="sort-options" style={{display: "flex", justifyContent: "flex-end", marginRight: "70px", marginBottom: "20px"}}>
-            <select style={{borderRadius: "5px"}} value={sortOrder} onChange={handleSortOrderChange}>
-              <option value="asc">Sort A-Z</option>
-              <option value="desc">Sort Z-A</option>
+          <div className="sort-options" style={{ display: "flex", justifyContent: "flex-end", marginRight: "70px", marginBottom: "20px" }}>
+            <select value={sortOrder} onChange={handleSortOrderChange} style={{ borderRadius: "5px" }}>
+              <option value="name-asc">Sort by Name A-Z</option>
+              <option value="name-desc">Sort by Name Z-A</option>
+              <option value="price-asc">Sort by Price Low to High</option>
+              <option value="price-desc">Sort by Price High to Low</option>
             </select>
           </div>
           <div className="grid-container">

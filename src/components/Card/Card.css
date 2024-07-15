@@ -76,7 +76,8 @@
 .add_to_cart{
   background-color: #1e40af;
   width: 100%;
-  height: 49.7px;
+  min-height: 49.7px !important;
+  height: 100% !important;
   color: white;
   font-family: "tkt";
 }

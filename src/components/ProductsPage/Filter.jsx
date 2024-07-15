@@ -28,7 +28,7 @@ const Filter = ({ onSearch, products, onModelChange, minPrice, maxPrice, onPrice
   };
 
   return (
-    <div className="w-1/4 p-4 bg-white" style={{ maxWidth: "350px" }}>
+    <div className="w-1/4 p-4 bg-white" style={{ maxWidth: "350px", width: "100%" }}>
       <div className="flex justify-between items-center mb-4 py-5 border-b border-t" style={{ fontFamily: "tkt" }}>
         <h2 className="text-xl font-bold">Filter</h2>
         <button className="text-gray-500" onClick={clearFilters}>Clear</button>
