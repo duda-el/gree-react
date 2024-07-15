@@ -8,6 +8,8 @@ function ProductTemplate() {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [similarProducts, setSimilarProducts] = useState([]);
+  const [mainImage, setMainImage] = useState("");
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     // Fetch product data from JSON file
@@ -17,6 +19,7 @@ function ProductTemplate() {
         const currentProduct = data.find(p => p.id === parseInt(id));
         if (currentProduct) {
           setProduct(currentProduct);
+          setMainImage(currentProduct.src);
 
           // Filter similar products based on model_name
           const filteredProducts = data.filter(p => p.model_name === currentProduct.model_name && p.id !== currentProduct.id);
@@ -32,11 +35,31 @@ function ProductTemplate() {
     return <div>Product not found</div>;
   }
 
+  const openModal = () => setShowModal(true);
+  const closeModal = () => setShowModal(false);
+
   return (
     <>
       <Header />
       <div className="product-details">
-        <img src={product.src} alt={product.product_name} />
+        <div className="images-container">
+          <div className="thumbnail-images">
+            {product.additionalImages && product.additionalImages.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`Additional ${index + 1}`}
+                onClick={() => setMainImage(image)}
+              />
+            ))}
+          </div>
+          <img
+            src={mainImage}
+            alt={product.product_name}
+            className="main-image"
+            onClick={openModal}
+          />
+        </div>
         <div className="details-container">
           <p className="price">{product.price}</p>
           <p className="product_name">{product.product_name}</p>
@@ -48,22 +71,22 @@ function ProductTemplate() {
           <p className="dimensions">განზომილებები: {product.dimensions}</p>
           <p className="features">მახასიათებლები:</p>
           <ul>
-            {product.features.map((feature, index) => (
+            {product.features && product.features.map((feature, index) => (
               <li key={index}>{feature}</li>
             ))}
           </ul>
           <p className="availability">ხელმისაწვდომობა: {product.availability}</p>
           <p className="warranty">გარანტია: {product.warranty}</p>
           <p className="manufacturer">მწარმოებელი: {product.manufacturer}</p>
-          <div className="reviews">
+          {/* <div className="reviews">
             <h3>მიმოხილვები:</h3>
-            {product.reviews.map((review, index) => (
+            {product.reviews && product.reviews.map((review, index) => (
               <div key={index} className="review">
                 <p><strong>{review.user}</strong> (Rating: {review.rating}/5)</p>
                 <p>{review.comment}</p>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -85,6 +108,14 @@ function ProductTemplate() {
       )}
 
       <Footer />
+
+      {/* Modal */}
+      {showModal && (
+        <div className="modal">
+          <span className="close" onClick={closeModal}>&times;</span>
+          <img className="modal-content" src={mainImage} alt={product.product_name} />
+        </div>
+      )}
     </>
   );
 }

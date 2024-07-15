@@ -132,8 +132,13 @@
 .add_to_cart {
   background-color: #1e40af;
   width: 100%;
-  height: 28px; /* Default height */
+  min-height: 28px; /* Default height */
   color: white;
+}
+
+.card a{
+  min-height: 50px !important;
+  width: 100%;
 }
 
 @media only screen and (min-width: 640px) {

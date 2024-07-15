@@ -18,7 +18,12 @@
     ],
     "availability": "In Stock",
     "warranty": "2 years",
-    "manufacturer": "Sumo Inc."
+    "manufacturer": "Sumo Inc.",
+    "additionalImages": [
+      "https://th.bing.com/th/id/OIP.QgaiWCKkZKHS1Ft40_dmPwHaHa?rs=1&pid=ImgDetMain",
+      "https://pngimg.com/uploads/air_conditioner/air_conditioner_PNG45.png",
+      "https://th.bing.com/th/id/OIP.DGoTaBzC9bPWufa1KLY1VAHaHa?rs=1&pid=ImgDetMain"
+    ]
   },
   {
     "id": 2,
@@ -39,7 +44,11 @@
     ],
     "availability": "Out of Stock",
     "warranty": "1 year",
-    "manufacturer": "BreezeMax Ltd."
+    "manufacturer": "BreezeMax Ltd.",
+    "additionalImages": [
+            "https://pngimg.com/uploads/air_conditioner/air_conditioner_PNG45.png",
+      "https://th.bing.com/th/id/OIP.DGoTaBzC9bPWufa1KLY1VAHaHa?rs=1&pid=ImgDetMain"
+    ]
   },
   {
     "id": 3,
@@ -60,7 +69,11 @@
     ],
     "availability": "In Stock",
     "warranty": "3 years",
-    "manufacturer": "Arctic Pro Corp."
+    "manufacturer": "Arctic Pro Corp.",
+    "additionalImages": [
+            "https://pngimg.com/uploads/air_conditioner/air_conditioner_PNG45.png",
+      "https://th.bing.com/th/id/OIP.DGoTaBzC9bPWufa1KLY1VAHaHa?rs=1&pid=ImgDetMain"
+    ]
   },
   {
     "id": 4,
@@ -81,7 +94,11 @@
     ],
     "availability": "Limited Stock",
     "warranty": "2 years",
-    "manufacturer": "ChillWave Industries"
+    "manufacturer": "ChillWave Industries",
+    "additionalImages": [
+      "https://pngimg.com/uploads/air_conditioner/air_conditioner_PNG45.png",
+      "https://th.bing.com/th/id/OIP.DGoTaBzC9bPWufa1KLY1VAHaHa?rs=1&pid=ImgDetMain"
+    ]
   },
   {
     "id": 5,
@@ -102,7 +119,11 @@
     ],
     "availability": "In Stock",
     "warranty": "1 year",
-    "manufacturer": "CoolBreeze Co."
+    "manufacturer": "CoolBreeze Co.",
+    "additionalImages": [
+            "https://pngimg.com/uploads/air_conditioner/air_conditioner_PNG45.png",
+      "https://th.bing.com/th/id/OIP.DGoTaBzC9bPWufa1KLY1VAHaHa?rs=1&pid=ImgDetMain"
+    ]
   },
   {
     "id": 6,
@@ -123,7 +144,11 @@
     ],
     "availability": "In Stock",
     "warranty": "2 years",
-    "manufacturer": "SuperCool Inc."
+    "manufacturer": "SuperCool Inc.",
+    "additionalImages": [
+            "https://pngimg.com/uploads/air_conditioner/air_conditioner_PNG45.png",
+      "https://th.bing.com/th/id/OIP.DGoTaBzC9bPWufa1KLY1VAHaHa?rs=1&pid=ImgDetMain"
+    ]
   },
   {
     "id": 7,
@@ -144,7 +169,11 @@
     ],
     "availability": "Out of Stock",
     "warranty": "1 year",
-    "manufacturer": "EcoBreeze Ltd."
+    "manufacturer": "EcoBreeze Ltd.",
+    "additionalImages": [
+          "https://pngimg.com/uploads/air_conditioner/air_conditioner_PNG45.png",
+      "https://th.bing.com/th/id/OIP.DGoTaBzC9bPWufa1KLY1VAHaHa?rs=1&pid=ImgDetMain"
+    ]
   },
   {
     "id": 8,
@@ -165,6 +194,10 @@
     ],
     "availability": "Limited Stock",
     "warranty": "3 years",
-    "manufacturer": "MegaCool Technologies"
+    "manufacturer": "MegaCool Technologies",
+    "additionalImages": [
+            "https://pngimg.com/uploads/air_conditioner/air_conditioner_PNG45.png",
+      "https://th.bing.com/th/id/OIP.DGoTaBzC9bPWufa1KLY1VAHaHa?rs=1&pid=ImgDetMain"
+    ]
   }
 ]
