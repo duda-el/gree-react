@@ -1,4 +1,3 @@
-// Card.js
 import React from 'react';
 import './Card.css'; // Adjust path as per your file structure
 import { Link } from 'react-router-dom';
@@ -11,7 +10,7 @@ const Card = ({ product }) => {
   return (
     <div className="card">
       <div className="img_wrapper">
-        <img src={product.image} alt={product.product_name} />
+        <img src={product.src} alt={product.product_name} />
       </div>
       <div className="content">
         <p className="price">{product.price}</p>
