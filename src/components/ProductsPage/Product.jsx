@@ -10,6 +10,8 @@ const Products = () => {
   const [selectedModels, setSelectedModels] = useState([]);
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(10000);
+  const [isFilterVisible, setIsFilterVisible] = useState(false); // State for filter visibility
+  const [sortOrder, setSortOrder] = useState('asc'); // State for sorting order
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -39,6 +41,15 @@ const Products = () => {
     );
   });
 
+  // Sort products based on sortOrder
+  const sortedProducts = filteredProducts.sort((a, b) => {
+    if (sortOrder === 'asc') {
+      return a.product_name.localeCompare(b.product_name);
+    } else {
+      return b.product_name.localeCompare(a.product_name);
+    }
+  });
+
   console.log('Filtered Products:', filteredProducts); // Debugging log
 
   // Handle search term change
@@ -61,28 +72,49 @@ const Products = () => {
     setMaxPrice(max);
   };
 
+  // Toggle filter visibility
+  const toggleFilterVisibility = () => {
+    setIsFilterVisible(!isFilterVisible);
+  };
+
+  // Handle sorting order change
+  const handleSortOrderChange = (e) => {
+    setSortOrder(e.target.value);
+  };
+
   return (
     <div>
       <Header />
-      <div className="flex">
-        <Filter
-          onSearch={handleSearch}
-          products={products}
-          onModelChange={handleModelChange}
-          minPrice={minPrice}
-          maxPrice={maxPrice}
-          onPriceChange={handlePriceChange}
-          clearFilters={() => {
-            setSearchTerm('');
-            setSelectedModels([]);
-            setMinPrice(0);
-            setMaxPrice(10000);
-          }}
-        />
+      <button className="filter-toggle-button" onClick={toggleFilterVisibility}>
+        {isFilterVisible ? 'Hide Filters' : 'Show Filters'}
+      </button>
+      <div className="flex for_filter">
+        {isFilterVisible && (
+          <Filter
+            onSearch={handleSearch}
+            products={products}
+            onModelChange={handleModelChange}
+            minPrice={minPrice}
+            maxPrice={maxPrice}
+            onPriceChange={handlePriceChange}
+            clearFilters={() => {
+              setSearchTerm('');
+              setSelectedModels([]);
+              setMinPrice(0);
+              setMaxPrice(10000);
+            }}
+          />
+        )}
         <div className="w-3/4 p-4">
+          <div className="sort-options" style={{display: "flex", justifyContent: "flex-end", marginRight: "70px", marginBottom: "20px"}}>
+            <select style={{borderRadius: "5px"}} value={sortOrder} onChange={handleSortOrderChange}>
+              <option value="asc">Sort A-Z</option>
+              <option value="desc">Sort Z-A</option>
+            </select>
+          </div>
           <div className="grid-container">
-            {filteredProducts.length > 0 ? (
-              filteredProducts.map(product => (
+            {sortedProducts.length > 0 ? (
+              sortedProducts.map(product => (
                 <Card key={product.id} product={product} />
               ))
             ) : (
