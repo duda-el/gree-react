@@ -52,7 +52,7 @@
   animation: levitate 2s infinite ease-in-out;
   font-family: "tkt";
   cursor: pointer;
-  background-color: rgb(0, 62, 150);
+  background-color: #2C4F9E;
   padding: 8px 15px;
   border-radius: 8px;
 }
@@ -80,7 +80,7 @@
 
 .section-title {
   font-size: 20px;
-  color: rgb(0, 62, 150);
+  color: #2C4F9E;
   text-transform: uppercase;
   margin-bottom: 20px;
   font-weight: bold;

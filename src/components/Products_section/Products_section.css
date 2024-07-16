@@ -27,7 +27,7 @@
 
 .slider_button{
   width: 40px;
-  background-color: #1e40af;
+  background-color: #2C4F9E;
   height: 40px;
   border-radius: 8px;
   display: flex;
@@ -36,6 +36,6 @@
 }
 
 .slider_button:active{
-  border: 1px solid #1e40af;
+  border: 1px solid #2C4F9E;
 }
 

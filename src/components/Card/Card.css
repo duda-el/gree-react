@@ -42,7 +42,7 @@
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1;
-  color: #1e40af;
+  color: #2C4F9E;
 }
 
 .product_name{
@@ -74,7 +74,7 @@
 }
 
 .add_to_cart{
-  background-color: #1e40af;
+  background-color: #2C4F9E;
   width: 100%;
   min-height: 49.7px !important;
   height: 100% !important;
@@ -106,7 +106,7 @@
 .price {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #1e40af;
+  color: #2C4F9E;
 }
 
 .product_name {
@@ -131,7 +131,7 @@
 }
 
 .add_to_cart {
-  background-color: #1e40af;
+  background-color: #2C4F9E;
   width: 100%;
   min-height: 28px; /* Default height */
   color: white;
