@@ -7,6 +7,7 @@ import BtuCalculator from "./BtuCalculator";
 import Footer from "./Footer";
 import PartnerCompanies from "./Partners/Partner";
 import AboutCompany from "./AboutCompany ";
+import AirConditionerTypes from "./AirConditionerTypes";
 
 function Home() {
   return (
@@ -16,7 +17,8 @@ function Home() {
         <Swiper />
         <ProductsSection />
       </main>
-      <AboutCompany />
+      <AirConditionerTypes/>
+      {/* <AboutCompany /> */}
       <BtuCalculator />
       <div className="spacing">
         <PartnerCompanies />
