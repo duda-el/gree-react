@@ -42,6 +42,12 @@
 
 /* Filter component styling for mobile and tablet */
 @media (max-width: 768px) {
+  .sort-options{
+    position: absolute;
+    top: 169px;
+    right: 10px;
+  }
+
   .filter-toggle-button {
     display: block;
   }
