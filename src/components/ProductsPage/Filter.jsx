@@ -59,7 +59,7 @@ const Filter = ({ onSearch, products, onModelChange, minPrice, maxPrice, onPrice
             );
           }}
         />
-        <div className="flex justify-between mt-5">
+        <div className="flex justify-between mt-5" style={{gap: "10px"}}>
           <div className="relative w-40" style={{ fontFamily: "tkt" }}>
             <input
               type="number"

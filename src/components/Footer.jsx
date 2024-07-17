@@ -6,7 +6,7 @@ const Footer = () => {
   const pages = [
     { name: "მთავარი", href: "/" },
     { name: "ჩვენ შესახებ", href: "/about" },
-    { name: "პროდუქცია", href: "#" },
+    { name: "პროდუქცია", href: "/products" },
     { name: "სერვისები", href: "#" },
     { name: "კონტაქტი", href: "/contact" },
   ];

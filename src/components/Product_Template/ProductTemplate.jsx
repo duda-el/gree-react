@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer";
+import Loader from "../Loader";
 import "./ProductTemplate.css";
 
 function ProductTemplate() {
@@ -31,8 +32,35 @@ function ProductTemplate() {
       .catch(error => console.error('Error fetching product data:', error));
   }, [id]);
 
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (product?.additionalImages && product.additionalImages.length > 0) {
+        const currentIndex = product.additionalImages.indexOf(mainImage);
+        if (event.key === 'ArrowRight') {
+          const nextIndex = (currentIndex + 1) % product.additionalImages.length;
+          setMainImage(product.additionalImages[nextIndex]);
+        } else if (event.key === 'ArrowLeft') {
+          const prevIndex = (currentIndex - 1 + product.additionalImages.length) % product.additionalImages.length;
+          setMainImage(product.additionalImages[prevIndex]);
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [mainImage, product]);
+
   if (!product) {
-    return <div>Product not found</div>;
+    return <div><Loader /></div>;
+  } else if (similarProducts.length === 0) {
+    return <div>Loading...</div>;
+  } else if (!mainImage) {
+    return <div>Loading main image...</div>;
+  } else {
+    console.log('Product:', product);
+    console.log('Similar Products:', similarProducts);
   }
 
   const openModal = () => setShowModal(true);

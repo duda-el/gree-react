@@ -34,6 +34,7 @@
   padding: 10px;
   cursor: pointer;
   margin: 10px;
+  border-radius: 5px;
 }
 
 .filter-toggle-button:focus {
@@ -44,8 +45,9 @@
 @media (max-width: 768px) {
   .sort-options{
     position: absolute;
-    top: 169px;
-    right: 10px;
+    top: 149px;
+    right: 0;
+    margin-right: 10px !important;
   }
 
   .filter-toggle-button {
@@ -61,7 +63,7 @@
     top: 60px; /* Adjust based on your header height */
     left: 0;
     right: 0;
-    background: rgb(211, 71, 71);
+    /* background: rgb(211, 71, 71); */
     z-index: 10;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

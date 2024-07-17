@@ -113,6 +113,14 @@ const Products = () => {
       <button className="filter-toggle-button" onClick={toggleFilterVisibility}>
         {isFilterVisible ? 'Hide Filters' : 'Show Filters'}
       </button>
+      <div className="sort-options" style={{ display: "flex", justifyContent: "flex-end", marginRight: "70px", marginBottom: "10px", marginTop: "20px" }}>
+            <select value={sortOrder} onChange={handleSortOrderChange} style={{ borderRadius: "5px", padding: "10px"}}>
+              <option value="name-asc">Sort by Name A-Z</option>
+              <option value="name-desc">Sort by Name Z-A</option>
+              <option value="price-asc">Sort by Price Low to High</option>
+              <option value="price-desc">Sort by Price High to Low</option>
+            </select>
+          </div>
       <div className="flex for_filter">
         {/* Filter section */}
         <div className={`w-1/4 ${!isFilterVisible ? 'hidden' : ''}`}>
@@ -133,14 +141,7 @@ const Products = () => {
         </div>
         {/* Product grid */}
         <div className="w-3/4 p-4">
-          <div className="sort-options" style={{ display: "flex", justifyContent: "flex-end", marginRight: "70px", marginBottom: "20px" }}>
-            <select value={sortOrder} onChange={handleSortOrderChange} style={{ borderRadius: "5px" }}>
-              <option value="name-asc">Sort by Name A-Z</option>
-              <option value="name-desc">Sort by Name Z-A</option>
-              <option value="price-asc">Sort by Price Low to High</option>
-              <option value="price-desc">Sort by Price High to Low</option>
-            </select>
-          </div>
+          
           <div className="grid-container">
             {sortedProducts.length > 0 ? (
               sortedProducts.map(product => (
