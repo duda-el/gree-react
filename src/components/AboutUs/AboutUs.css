@@ -59,6 +59,13 @@
   cursor: pointer;
 }
 
+.overviewText{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
 .seeProducts {
   background-color: white;
   color: black;
@@ -68,6 +75,72 @@
   background-color: transparent;
   color: white;
   border: 1px solid white;
+}
+
+.companyOverviewContainer {
+  display: flex;
+  margin: 30px auto;
+  width: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  padding: 20px;
+  gap: 50px;
+}
+
+
+.overviewImage {
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.overviewTextContainer {
+  flex: 2;
+  padding: 20px;
+  font-family: 'tkt';
+}
+
+.overviewTextContainer h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.overviewTextContainer p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.aboutVector {
+  margin-bottom: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 25px 0.5px #1268F1;
+}
+
+@media (max-width: 1200px) {
+  .companyOverviewContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .overviewImageContainer, .overviewTextContainer {
+    flex: none;
+    padding: 10px;
+  }
+
+  .overviewImage {
+    height: auto;
+    width: 60%;
+  }
+
+  .overviewText h2{
+    font-size: 23px;
+  }
 }
 
 /* Responsive Styles */
@@ -95,11 +168,30 @@
     height: 80px;
     width: auto;
   }
+
+  .aboutVector{
+    width: 35px;
+    height: 35px;
+  }
+
+  .companyOverviewContainer {
+    flex-direction: column;
+  }
+
+  .overviewImageContainer, .overviewTextContainer {
+    flex: none;
+    padding: 10px;
+  }
+
+  .overviewImage {
+    height: auto;
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
   .aboutUsContainer {
-    height: 500px; /* Adjusted height for mobile devices */
+    height: 600px;
   }
 
   .textContainer {
@@ -128,6 +220,19 @@
   .lineSvg {
     margin-right: 10px;
     height: 60px;
-    width: auto; /* Adjust margin for mobile */
+    width: auto;
+  }
+
+  .overviewTextContainer h2 {
+    font-size: 24px;
+  }
+
+  .overviewTextContainer p {
+    font-size: 14px;
+  }
+
+  .aboutVector {
+    height: 40px;
+    margin-bottom: 10px;
   }
 }
