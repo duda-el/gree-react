@@ -5,9 +5,10 @@
   /* background-color: #f9f9f9; */
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
   max-width: 800px;
   margin: 20px auto;
+  gap: 20px;
 }
 
 .product-details img {
@@ -126,12 +127,19 @@
 @media screen and (max-width: 1300px) {
   .images-container{
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
+    flex-direction: column-reverse !important;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-between;
   }
 
   .thumbnail-images{
+    width: 100%;
+    display: flex;
     flex-direction: row !important;
+    overflow-x: auto;
+    gap: 10px;
+    margin-right: 0px !important;
   }
 }
 
@@ -201,23 +209,66 @@
 
 
 
-.images-container {
+/* .images-container {
   display: flex;
   align-items: center;
+} */
+.images-container {
+  display: flex;
+  /* border: 2px solid #d2d2d2; */
+  border-radius: 10px;
+  padding: 10px;
 }
 
-.thumbnail-images {
+
+
+/* .thumbnail-images {
   display: flex;
   flex-direction: column;
   margin-right: 10px;
+} */
+
+.thumbnail-images::-webkit-scrollbar {
+  width: 1px; /* For WebKit browsers */
+}
+
+.thumbnail-images::-webkit-scrollbar-thumb {
+  background-color: transparent; /* For WebKit browsers */
+}
+
+.thumbnail-images::-webkit-scrollbar-track {
+  background: transparent; /* For WebKit browsers */
+}
+
+.thumbnail-images{
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  gap: 10px;
+  align-items: center;
+  margin-right: 10px;
+  /* border: 2px solid #d2d2d2; */
+  border-radius: 10px;
+  padding: 10px;
+  scrollbar-width: unset; /* For Firefox */
 }
 
 .thumbnail-images img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+  margin: 0;
+  cursor: pointer;
+  /* border: 1px solid #d2d2d2; */
+  padding: 5px;
+}
+
+/* .thumbnail-images img {
   width: 50px;
   height: 50px;
   margin-bottom: 5px;
   cursor: pointer;
-}
+} */
 
 .main-image {
   width: 300px;
@@ -268,17 +319,18 @@
 
 .images-container {
   display: flex;
+  flex-direction: row-reverse;
 }
 
-.thumbnail-images {
+/* .thumbnail-images {
   display: flex;
   flex-direction: column;
   margin-right: 10px;
-}
+} */
 
 .thumbnail-images img {
-  width: 187px;
-  height: 141px;
+  /* width: 187px;
+  height: 141px; */
   margin-bottom: 5px;
   cursor: pointer;
 }
