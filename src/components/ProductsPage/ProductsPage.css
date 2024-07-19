@@ -190,3 +190,7 @@ select::-ms-expand {
 .select-container {
   position: relative;
 }
+
+.no-scroll {
+  overflow: hidden;
+}

@@ -9,7 +9,7 @@ const Card = ({ product }) => {
 
   return (
     <div className="card">
-      <div className="img_wrapper">
+      <div className="img_wrapper" style={{ minHeight: "300px"}}>
         <img src={product.src} alt={product.product_name} />
       </div>
       <div className="content">

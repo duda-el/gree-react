@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer";
 import Loader from "../Loader";
@@ -129,6 +129,9 @@ function ProductTemplate() {
                 <p className="price">{similarProduct.price}</p>
                 <p className="product_name">{similarProduct.product_name}</p>
                 <p className="availability">ხელმისაწვდომობა: {similarProduct.availability}</p>
+                <Link to={`/product/${similarProduct.id}`}>
+                  <button className="view-product-button" style={{color: "#2C4F9E"}}>View Product</button>
+                </Link>
               </div>
             ))}
           </div>

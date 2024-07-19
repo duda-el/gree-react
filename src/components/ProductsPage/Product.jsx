@@ -12,6 +12,7 @@ const Products = () => {
   const [maxPrice, setMaxPrice] = useState(10000);
   const [isFilterVisible, setIsFilterVisible] = useState(true); // Start with filter visible by default on desktop
   const [sortOrder, setSortOrder] = useState('name-asc'); // State for sorting order
+  const [visibleProducts, setVisibleProducts] = useState(12); // State for number of visible products
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -29,6 +30,30 @@ const Products = () => {
     };
 
     fetchProducts();
+  }, []);
+
+  useEffect(() => {
+    if (isFilterVisible && window.innerWidth < 1024) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }, [isFilterVisible]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const isMobileOrTablet = window.innerWidth < 1024; // Adjust breakpoint as needed
+      if (!isMobileOrTablet) {
+        setIsFilterVisible(true); // Always show filter on desktop
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Initial check on component mount
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   // Filter products based on search term, selected models, and price range
@@ -89,22 +114,10 @@ const Products = () => {
     setSortOrder(e.target.value);
   };
 
-  // Determine screen size to decide visibility
-  useEffect(() => {
-    const handleResize = () => {
-      const isMobileOrTablet = window.innerWidth < 1024; // Adjust breakpoint as needed
-      if (!isMobileOrTablet) {
-        setIsFilterVisible(true); // Always show filter on desktop
-      }
-    };
-
-    window.addEventListener('resize', handleResize);
-    handleResize(); // Initial check on component mount
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  // Load more products
+  const loadMoreProducts = () => {
+    setVisibleProducts(prevVisibleProducts => prevVisibleProducts + 12);
+  };
 
   return (
     <div>
@@ -114,13 +127,13 @@ const Products = () => {
         {isFilterVisible ? 'Hide Filters' : 'Show Filters'}
       </button>
       <div className="sort-options" style={{ display: "flex", justifyContent: "flex-end", marginRight: "70px", marginBottom: "10px", marginTop: "20px" }}>
-            <select value={sortOrder} onChange={handleSortOrderChange} style={{ borderRadius: "5px", padding: "10px"}}>
-              <option value="name-asc">Sort by Name A-Z</option>
-              <option value="name-desc">Sort by Name Z-A</option>
-              <option value="price-asc">Sort by Price Low to High</option>
-              <option value="price-desc">Sort by Price High to Low</option>
-            </select>
-          </div>
+        <select value={sortOrder} onChange={handleSortOrderChange} style={{ borderRadius: "5px", padding: "10px"}}>
+          <option value="name-asc">Sort by Name A-Z</option>
+          <option value="name-desc">Sort by Name Z-A</option>
+          <option value="price-asc">Sort by Price Low to High</option>
+          <option value="price-desc">Sort by Price High to Low</option>
+        </select>
+      </div>
       <div className="flex for_filter">
         {/* Filter section */}
         <div className={`w-1/4 ${!isFilterVisible ? 'hidden' : ''}`}>
@@ -141,16 +154,18 @@ const Products = () => {
         </div>
         {/* Product grid */}
         <div className="w-3/4 p-4">
-          
           <div className="grid-container">
-            {sortedProducts.length > 0 ? (
-              sortedProducts.map(product => (
-                <Card key={product.id} product={product} />
-              ))
-            ) : (
-              <p>No products found</p>
-            )}
+            {sortedProducts.slice(0, visibleProducts).map(product => (
+              <Card key={product.id} product={product} />
+            ))}
           </div>
+          {visibleProducts < sortedProducts.length && (
+            <div className="load-more-container" style={{display: "flex", justifyContent: "flex-start", marginTop: "20px"}}>
+              <button className="load-more-button" style={{backgroundColor: "#2C4F9E", color: "#f5f5f5", padding: "10px 20px"}} onClick={loadMoreProducts}>
+                მეტის ჩვენება
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>
