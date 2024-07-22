@@ -11,6 +11,13 @@
   }
 }
 
+@media (min-width: 768px) {
+  .w-1\/4 {
+    top: -35px;
+    position: relative;
+  }
+}
+
 @media (min-width: 1024px) {
   .grid-container {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -90,10 +97,6 @@
     align-items: center;
   }
 }
-
-
-
-
 
 .horizontal-slider {
   width: 100%;
