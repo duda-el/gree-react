@@ -1,0 +1,204 @@
+[
+    {
+      "id": 1,
+      "src": "https://th.bing.com/th/id/OIP.QgaiWCKkZKHS1Ft40_dmPwHaHa?rs=1&pid=ImgDetMain",
+      "price": "3000₾",
+      "product_name": "Sumo 75 XL Powerful Desert Air Cooler 75-litres",
+      "power": "200BTU",
+      "cooling_range": "18°C - 24°C",
+      "description": "A powerful air cooler with a large water tank and efficient cooling technology.",
+      "model_name": "GREE LOMO",
+      "brand": "Sumo",
+      "weight": "15kg",
+      "dimensions": "75x40x30 cm",
+      "features": ["Large water tank", "Remote control", "Energy efficient"],
+      "reviews": [
+        { "user": "John Doe", "rating": 5, "comment": "Excellent cooler!" },
+        { "user": "Jane Smith", "rating": 4, "comment": "Very effective, but a bit noisy." }
+      ],
+      "availability": "In Stock",
+      "warranty": "2 years",
+      "manufacturer": "Sumo Inc.",
+      "additionalImages": [
+        "https://th.bing.com/th/id/OIP.QgaiWCKkZKHS1Ft40_dmPwHaHa?rs=1&pid=ImgDetMain",
+        "https://pngimg.com/uploads/air_conditioner/air_conditioner_PNG45.png",
+        "https://th.bing.com/th/id/OIP.DGoTaBzC9bPWufa1KLY1VAHaHa?rs=1&pid=ImgDetMain"
+      ]
+    },
+    {
+      "id": 2,
+      "src": "https://purepng.com/public/uploads/large/purepng.com-air-conditionerair-conditionerairconditioneracacair-conair-conditioning-1701528308899n1sqb.png",
+      "price": "2500₾",
+      "product_name": "BreezeMax 50 Medium Desert Air Cooler 50-litres",
+      "power": "150BTU",
+      "cooling_range": "20°C - 26°C",
+      "description": "Medium-sized air cooler ideal for small to medium-sized rooms.",
+      "model_name": "GREE U-CROWN",
+      "brand": "BreezeMax",
+      "weight": "12kg",
+      "dimensions": "50x35x25 cm",
+      "features": ["Compact design", "Quiet operation", "Low maintenance"],
+      "reviews": [
+        { "user": "Alice Johnson", "rating": 4, "comment": "Great value for the price." },
+        { "user": "Bob Brown", "rating": 3, "comment": "Works well but could be quieter." }
+      ],
+      "availability": "Out of Stock",
+      "warranty": "1 year",
+      "manufacturer": "BreezeMax Ltd.",
+      "additionalImages": [
+        "https://pngimg.com/uploads/air_conditioner/air_conditioner_PNG45.png",
+        "https://th.bing.com/th/id/OIP.DGoTaBzC9bPWufa1KLY1VAHaHa?rs=1&pid=ImgDetMain"
+      ]
+    },
+    {
+      "id": 3,
+      "src": "https://th.bing.com/th/id/OIP.CHBYP-31CX2C0Wq__Kd-RAHaEF?rs=1&pid=ImgDetMain",
+      "price": "4000₾",
+      "product_name": "Arctic Pro 100 XL Ultra Air Cooler 100-litres",
+      "power": "300BTU",
+      "cooling_range": "16°C - 22°C",
+      "description": "Ultra-large air cooler with maximum cooling capacity for large spaces.",
+      "model_name": "GREE SOYAL",
+      "brand": "Arctic Pro",
+      "weight": "20kg",
+      "dimensions": "100x50x40 cm",
+      "features": ["Maximum cooling capacity", "Durable build", "Touch control panel"],
+      "reviews": [
+        { "user": "Charles Green", "rating": 5, "comment": "Best cooler I've ever used!" },
+        { "user": "Diana White", "rating": 4, "comment": "Very effective but a bit pricey." }
+      ],
+      "availability": "In Stock",
+      "warranty": "3 years",
+      "manufacturer": "Arctic Pro Corp.",
+      "additionalImages": [
+        "https://pngimg.com/uploads/air_conditioner/air_conditioner_PNG45.png",
+        "https://th.bing.com/th/id/OIP.DGoTaBzC9bPWufa1KLY1VAHaHa?rs=1&pid=ImgDetMain"
+      ]
+    },
+    {
+      "id": 4,
+      "src": "https://th.bing.com/th/id/OIP.VbSBlglpB8vFnAnoc6kKyAHaHa?rs=1&pid=ImgDetMain",
+      "price": "3500₾",
+      "product_name": "ChillWave 65 Large Desert Air Cooler 65-litres",
+      "power": "220BTU",
+      "cooling_range": "19°C - 25°C",
+      "description": "Large air cooler with advanced features for efficient cooling.",
+      "model_name": "GREE FAIRY",
+      "brand": "ChillWave",
+      "weight": "18kg",
+      "dimensions": "65x45x35 cm",
+      "features": ["Advanced cooling technology", "Energy saving", "Remote control"],
+      "reviews": [
+        { "user": "Eva Blue", "rating": 4, "comment": "Good cooler with nice features." },
+        { "user": "Frank Black", "rating": 3, "comment": "Effective but a bit bulky." }
+      ],
+      "availability": "Limited Stock",
+      "warranty": "2 years",
+      "manufacturer": "ChillWave Industries",
+      "additionalImages": [
+        "https://pngimg.com/uploads/air_conditioner/air_conditioner_PNG45.png",
+        "https://th.bing.com/th/id/OIP.DGoTaBzC9bPWufa1KLY1VAHaHa?rs=1&pid=ImgDetMain"
+      ]
+    },
+    {
+      "id": 5,
+      "src": "https://th.bing.com/th/id/R.3cd12919c7d7d8411e57281322ec2bf3?rik=lJhkTuxIA3wxjQ&pid=ImgRaw&r=0",
+      "price": "2700₾",
+      "product_name": "CoolBreeze 45 Compact Desert Air Cooler 45-litres",
+      "power": "130BTU",
+      "cooling_range": "21°C - 27°C",
+      "description": "Compact air cooler perfect for small spaces and easy mobility.",
+      "model_name": "GREE AMBER",
+      "brand": "CoolBreeze",
+      "weight": "10kg",
+      "dimensions": "45x30x20 cm",
+      "features": ["Portable", "Easy to use", "Low energy consumption"],
+      "reviews": [
+        { "user": "Grace White", "rating": 4, "comment": "Perfect for small rooms." },
+        { "user": "Henry Brown", "rating": 3, "comment": "Works well but needs frequent refills." }
+      ],
+      "availability": "In Stock",
+      "warranty": "1 year",
+      "manufacturer": "CoolBreeze Co.",
+      "additionalImages": [
+        "https://pngimg.com/uploads/air_conditioner/air_conditioner_PNG45.png",
+        "https://th.bing.com/th/id/OIP.DGoTaBzC9bPWufa1KLY1VAHaHa?rs=1&pid=ImgDetMain"
+      ]
+    },
+    {
+      "id": 6,
+      "src": "https://th.bing.com/th/id/OIP.FFmJ2cSDsSIPWh5mG8_fewHaE3?w=730&h=479&rs=1&pid=ImgDetMain",
+      "price": "3200₾",
+      "product_name": "SuperCool 80 High Capacity Desert Air Cooler 80-litres",
+      "power": "250BTU",
+      "cooling_range": "15°C - 20°C",
+      "description": "High capacity air cooler suitable for large rooms and high temperatures.",
+      "model_name": "GREE LOMO",
+      "brand": "SuperCool",
+      "weight": "22kg",
+      "dimensions": "80x50x40 cm",
+      "features": ["Extra large water tank", "Digital display", "Remote control"],
+      "reviews": [
+        { "user": "Lisa Green", "rating": 5, "comment": "Amazing cooling performance!" },
+        { "user": "Michael Brown", "rating": 4, "comment": "Great for hot summers." }
+      ],
+      "availability": "In Stock",
+      "warranty": "2 years",
+      "manufacturer": "SuperCool Inc.",
+      "additionalImages": [
+        "https://pngimg.com/uploads/air_conditioner/air_conditioner_PNG45.png",
+        "https://th.bing.com/th/id/OIP.DGoTaBzC9bPWufa1KLY1VAHaHa?rs=1&pid=ImgDetMain"
+      ]
+    },
+    {
+      "id": 7,
+      "src": "https://th.bing.com/th/id/OIP.Zi3V2XxvKp7x9w0D-Kte5wHaF7?w=332&h=332&rs=1&pid=ImgDetMain",
+      "price": "2900₾",
+      "product_name": "AirStream 55 Desert Air Cooler 55-litres",
+      "power": "180BTU",
+      "cooling_range": "18°C - 24°C",
+      "description": "Desert air cooler with a moderate capacity and efficient cooling.",
+      "model_name": "GREE LUX",
+      "brand": "AirStream",
+      "weight": "14kg",
+      "dimensions": "55x35x30 cm",
+      "features": ["Good cooling efficiency", "User-friendly controls", "Stylish design"],
+      "reviews": [
+        { "user": "Nancy Carter", "rating": 4, "comment": "Nice cooler, works as expected." },
+        { "user": "Oscar King", "rating": 3, "comment": "Decent cooler but a bit loud." }
+      ],
+      "availability": "Out of Stock",
+      "warranty": "1 year",
+      "manufacturer": "AirStream Ltd.",
+      "additionalImages": [
+        "https://pngimg.com/uploads/air_conditioner/air_conditioner_PNG45.png",
+        "https://th.bing.com/th/id/OIP.DGoTaBzC9bPWufa1KLY1VAHaHa?rs=1&pid=ImgDetMain"
+      ]
+    },
+    {
+      "id": 8,
+      "src": "https://th.bing.com/th/id/OIP.vmcDkU0EYsTHnO9OqCxgSgHaF2?w=263&h=248&rs=1&pid=ImgDetMain",
+      "price": "3300₾",
+      "product_name": "FreezeMax 70 Desert Air Cooler 70-litres",
+      "power": "220BTU",
+      "cooling_range": "17°C - 23°C",
+      "description": "Efficient desert air cooler with a large capacity and reliable cooling.",
+      "model_name": "GREE CLASSIC",
+      "brand": "FreezeMax",
+      "weight": "16kg",
+      "dimensions": "70x40x35 cm",
+      "features": ["Reliable cooling", "Large capacity", "Easy to clean"],
+      "reviews": [
+        { "user": "Paul Davis", "rating": 4, "comment": "Good performance and reliable." },
+        { "user": "Sandra Lee", "rating": 3, "comment": "Effective but could be more quiet." }
+      ],
+      "availability": "Limited Stock",
+      "warranty": "2 years",
+      "manufacturer": "FreezeMax Corp.",
+      "additionalImages": [
+        "https://pngimg.com/uploads/air_conditioner/air_conditioner_PNG45.png",
+        "https://th.bing.com/th/id/OIP.DGoTaBzC9bPWufa1KLY1VAHaHa?rs=1&pid=ImgDetMain"
+      ]
+    }
+  ]
+  
