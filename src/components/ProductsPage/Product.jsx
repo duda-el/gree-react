@@ -10,7 +10,7 @@ const Products = () => {
   const [selectedModels, setSelectedModels] = useState([]);
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(10000);
-  const [isFilterVisible, setIsFilterVisible] = useState(true); // Start with filter visible by default on desktop
+  const [isFilterVisible, setIsFilterVisible] = useState(false); // Start with filter hidden by default on mobile
   const [sortOrder, setSortOrder] = useState('name-asc'); // State for sorting order
   const [visibleProducts, setVisibleProducts] = useState(12); // State for number of visible products
 
@@ -45,6 +45,8 @@ const Products = () => {
       const isMobileOrTablet = window.innerWidth < 1024; // Adjust breakpoint as needed
       if (!isMobileOrTablet) {
         setIsFilterVisible(true); // Always show filter on desktop
+      } else {
+        setIsFilterVisible(false); // Hide filter on mobile/tablet
       }
     };
 

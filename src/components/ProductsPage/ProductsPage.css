@@ -48,8 +48,9 @@
   outline: none;
 }
 
+
 /* Filter component styling for mobile and tablet */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .sort-options{
     position: absolute;
     top: 149px;
