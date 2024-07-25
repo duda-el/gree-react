@@ -3,6 +3,7 @@ import Header from '../Header/Header';
 import Filter from './Filter'; // Adjust the path as needed
 import Card from '../Card/index'; // Adjust the path as needed
 import './ProductsPage.css'; // Import your CSS file
+import { FaSlidersH, FaTimes } from 'react-icons/fa'; // Importing FontAwesome icons
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -11,6 +12,7 @@ const Products = () => {
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(10000);
   const [isFilterVisible, setIsFilterVisible] = useState(false); // Start with filter hidden by default on mobile
+  const [isMobileOrTablet, setIsMobileOrTablet] = useState(false); // Track if the screen size is mobile or tablet
   const [sortOrder, setSortOrder] = useState('name-asc'); // State for sorting order
   const [visibleProducts, setVisibleProducts] = useState(12); // State for number of visible products
 
@@ -33,16 +35,17 @@ const Products = () => {
   }, []);
 
   useEffect(() => {
-    if (isFilterVisible && window.innerWidth < 1024) {
+    if (isFilterVisible && isMobileOrTablet) {
       document.body.classList.add('no-scroll');
     } else {
       document.body.classList.remove('no-scroll');
     }
-  }, [isFilterVisible]);
+  }, [isFilterVisible, isMobileOrTablet]);
 
   useEffect(() => {
     const handleResize = () => {
       const isMobileOrTablet = window.innerWidth < 1024; // Adjust breakpoint as needed
+      setIsMobileOrTablet(isMobileOrTablet);
       if (!isMobileOrTablet) {
         setIsFilterVisible(true); // Always show filter on desktop
       } else {
@@ -124,16 +127,18 @@ const Products = () => {
   return (
     <div>
       <Header />
-      {/* Toggle button for mobile and tablet */}
-      <button className="filter-toggle-button" onClick={toggleFilterVisibility}>
-        {isFilterVisible ? 'Hide Filters' : 'Show Filters'}
-      </button>
+      {/* Toggle button for mobile and tablet, hidden on larger screens */}
+      {isMobileOrTablet && (
+        <button className="filter-toggle-button" onClick={toggleFilterVisibility} style={{ display: 'flex', alignItems: 'center' }}>
+          ფილტრი {isFilterVisible ? <FaTimes style={{ marginLeft: '8px' }} /> : <FaSlidersH style={{ marginLeft: '8px' }} />}
+        </button>
+      )}
       <div className="sort-options" style={{ display: "flex", justifyContent: "flex-end", marginRight: "70px", marginBottom: "10px", marginTop: "20px" }}>
-        <select value={sortOrder} onChange={handleSortOrderChange} style={{ borderRadius: "5px", padding: "10px"}}>
-          <option value="name-asc">Sort by Name A-Z</option>
-          <option value="name-desc">Sort by Name Z-A</option>
-          <option value="price-asc">Sort by Price Low to High</option>
-          <option value="price-desc">Sort by Price High to Low</option>
+        <select value={sortOrder} onChange={handleSortOrderChange} style={{ borderRadius: "12px", padding: "10px", fontFamily: "tkt"}}>
+          <option value="name-asc">დასახელება: A-Z</option>
+          <option value="name-desc">დასახელება: Z-A</option>
+          <option value="price-asc">ფასი: კლებადობით</option>
+          <option value="price-desc">ფასი: მატებით</option>
         </select>
       </div>
       <div className="flex for_filter">

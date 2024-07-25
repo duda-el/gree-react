@@ -35,13 +35,16 @@
 /* Button styles */
 .filter-toggle-button {
   display: none;
-  background-color: #007bff;
+  background-color: #2C4F9E;
   color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
   margin: 10px;
-  border-radius: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 12px;
+  font-family: "tkt";
 }
 
 .filter-toggle-button:focus {
@@ -165,7 +168,7 @@
 /* New CSS */
 select {
   outline: none; /* Remove default outline */
-  border: 1px solid #1268f1; /* Light gray border */
+  border: 1px solid #2C4F9E; /* Light gray border */
   padding: 0.5rem;
   font-family: "tkt";
   transition: border-color 0.2s ease;
