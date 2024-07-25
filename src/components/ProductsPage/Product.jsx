@@ -124,6 +124,14 @@ const Products = () => {
     setVisibleProducts(prevVisibleProducts => prevVisibleProducts + 12);
   };
 
+  // Clear filters function
+  const clearFilters = () => {
+    setSearchTerm('');
+    setSelectedModels([]);
+    setMinPrice(0);
+    setMaxPrice(10000);
+  };
+
   return (
     <div>
       <Header />
@@ -151,12 +159,9 @@ const Products = () => {
             minPrice={minPrice}
             maxPrice={maxPrice}
             onPriceChange={handlePriceChange}
-            clearFilters={() => {
-              setSearchTerm('');
-              setSelectedModels([]);
-              setMinPrice(0);
-              setMaxPrice(10000);
-            }}
+            clearFilters={clearFilters}
+            searchTerm={searchTerm} // Pass the current search term
+            selectedModels={selectedModels} // Pass the selected models
           />
         </div>
         {/* Product grid */}
