@@ -6,6 +6,7 @@ import Liner from "../../img/Liner.svg";
 import AboutVector from "../../img/AboutVector.svg";
 import "./AboutUs.css";
 import Footer from "../Footer";
+import Faq from "../Faq";
 
 function AboutUs() {
   return (
@@ -30,7 +31,7 @@ function AboutUs() {
       </div>
 
       <div className="companyOverviewContainer">
-          <img src={OverviewImg} alt="Company Overview" className="overviewImage" />
+        <img src={OverviewImg} alt="Company Overview" className="overviewImage" />
         <div className="overviewTextContainer">
           <div className="overviewText">
             <img src={AboutVector} alt="About Icon" className="aboutVector" />
@@ -50,7 +51,9 @@ function AboutUs() {
           </p>
         </div>
       </div>
-      {/* <Footer /> */}
+      {/* <div className="midBanner"></div> */}
+      <Faq />
+      <Footer />
     </div>
   );
 }
