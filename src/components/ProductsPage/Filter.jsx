@@ -30,15 +30,16 @@ const Filter = ({ onSearch, products, onModelChange, minPrice, maxPrice, onPrice
   return (
     <div className="w-1/4 p-4 bg-white" style={{ maxWidth: "350px", width: "100%" }}>
       <div className="flex justify-between items-center mb-4 py-5 border-b border-t" style={{ fontFamily: "tkt" }}>
-        <h2 className="text-xl font-bold">Filter</h2>
-        <button className="text-gray-500" onClick={clearFilters}>Clear</button>
+        <h2 className="text-xl font-bold">ფილტრი</h2>
+        <button className="text-gray-500" onClick={clearFilters}>გასუფთავება</button>
       </div>
       <div className="mb-4">
         <input
           type="text"
-          placeholder="Search by product name"
-          className="w-full p-2 border rounded mb-4"
+          placeholder="მოძებნეთ პროდუქტი დასახელებით"
+          className="w-full p-2 border rounded mb-4 text-md"
           onChange={handleSearchChange}
+          style={{fontFamily: "tkt"}}
         />
         <Slider
           className="horizontal-slider"
@@ -91,7 +92,7 @@ const Filter = ({ onSearch, products, onModelChange, minPrice, maxPrice, onPrice
         </div>
       </div>
       <div style={{ fontFamily: "tkt" }}>
-        <h3 className="text-lg font-bold mb-2">GREE Models</h3>
+        <h3 className="text-lg font-bold mb-2">მოდელები</h3>
         {uniqueModelNames.map(modelName => (
           <div key={modelName} className="mb-2">
             <label className="flex items-center">
