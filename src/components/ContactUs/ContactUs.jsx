@@ -87,7 +87,7 @@ const ContactUs = () => {
               onChange={handleChange}
             ></textarea>
           </div>
-          <button type="submit">გაგზავნა</button>
+          <button type="submit" className='sendBtn'>გაგზავნა</button>
         </form>
         <div className="map-container">
           <iframe
