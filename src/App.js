@@ -6,6 +6,7 @@ import AboutUs from "../src/components/AboutUs/AboutUs";
 import ProductsPage from "../src/components/ProductsPage/Product";
 import ProductTemplate from "../src/components/Product_Template/ProductTemplate";
 import Loader from "./components/Loader";
+import ContactUs from "./components/ContactUs/ContactUs"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path="/about" element={<AboutUs />} />
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/product/:id" element={<ProductTemplate />} />
+            <Route path="/contact" element={<ContactUs />} />
           </Routes>
         </>
       )}
