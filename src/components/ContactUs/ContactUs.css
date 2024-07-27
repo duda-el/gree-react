@@ -64,10 +64,6 @@ button {
   transition: ease-in-out 0.2s;
 }
 
-button:hover {
-  background-color: #1268f1;
-}
-
 .map-container {
   flex: 1;
   padding-left: 20px;
