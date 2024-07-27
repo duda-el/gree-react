@@ -166,13 +166,15 @@
 .product-list{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 20px;
+  justify-content: flex-start;
+  gap: 30px;
+  /* justify-content: space-evenly; */
+  /* gap: 20px; */
 }
 
 .similar-products h2 {
-  /* text-align: left; */
-  text-align: center;
+  text-align: left;
+  /* text-align: center; */
   font-family: tkt;
   color: #007bff;
   font-size: 24px;

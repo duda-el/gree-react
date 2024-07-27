@@ -24,8 +24,12 @@ function AboutUs() {
             GREE დაარსდა 1991 წელს ჩინეთში, ჟუჰაიში, კონდიციონერების აწყობით დაიწყო. ახლა გლობალური ლიდერი, Gree აწარმოებს კონდიციონერებს, საყოფაცხოვრებო ტექნიკას და სხვას GREE, KINGHOME და TOSOT ბრენდების ქვეშ. 160-ზე მეტ ქვეყანაში ექსპორტს ახორციელებს, Gree ფოკუსირებულია ვნებაზე, ინოვაციებზე და ცხოვრების გაუმჯობესებაზე.
           </p>
           <div className="buttons">
-            <button className="seeProducts">პროდუქციის ნახვა</button>
-            <button className="contactUs">კონტაქტი</button>
+            <button className="seeProducts">
+              <a href="/products">პროდუქციის ნახვა</a>
+            </button>
+            <button className="contactUs">
+              <a href="/contact">კონტაქტი</a>
+            </button>
           </div>
         </div>
       </div>
