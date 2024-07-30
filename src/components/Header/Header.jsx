@@ -112,7 +112,7 @@ export default function Example() {
       </Transition>
 
       <header
-        className="relative bg-white border-b-2 border-blue-800"
+        className="relative bg-white border-b-2 border-customBlue"
       >
         <div className="blue-header-container">
           <div className="info-container">
