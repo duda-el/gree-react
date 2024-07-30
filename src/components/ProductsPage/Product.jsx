@@ -145,8 +145,8 @@ const Products = () => {
         <select value={sortOrder} onChange={handleSortOrderChange} style={{ borderRadius: "12px", padding: "10px", fontFamily: "tkt"}}>
           <option value="name-asc">დასახელება: A-Z</option>
           <option value="name-desc">დასახელება: Z-A</option>
-          <option value="price-asc">ფასი: კლებადობით</option>
-          <option value="price-desc">ფასი: მატებით</option>
+          <option value="price-asc">ფასი: მატებით</option>
+          <option value="price-desc">ფასი: კლებადობით</option>
         </select>
       </div>
       <div className="flex for_filter">
@@ -173,7 +173,7 @@ const Products = () => {
           </div>
           {visibleProducts < sortedProducts.length && (
             <div className="load-more-container" style={{display: "flex", justifyContent: "flex-start", marginTop: "20px"}}>
-              <button className="load-more-button" style={{backgroundColor: "#2C4F9E", color: "#f5f5f5", padding: "10px 20px"}} onClick={loadMoreProducts}>
+              <button className="load-more-button" style={{backgroundColor: "#2C4F9E", color: "#f5f5f5", padding: "10px 20px", fontFamily: "tkt", borderRadius: "12px"}} onClick={loadMoreProducts}>
                 მეტის ჩვენება
               </button>
             </div>
