@@ -1,9 +1,10 @@
 import React from 'react';
-import Celing from "../img/celing_mounted.jpg"
-import Ducted from "../img/ducted.jpg"
-import Wall from "../img/wall.jpg"
-import Celing2 from "../img/celing2.jpg"
-import Outdoor from "../img/Outdoor.jpg"
+import './AirConditionerTypes.css';
+import Celing from "../../img/celing_mounted.jpg";
+import Ducted from "../../img/ducted.jpg";
+import Wall from "../../img/wall.jpg";
+import Celing2 from "../../img/celing2.jpg";
+import Outdoor from "../../img/Outdoor.jpg";
 
 const AirConditionerTypes = () => {
   const items = [
@@ -16,7 +17,7 @@ const AirConditionerTypes = () => {
   ];
 
   return (
-    <div className="container mx-auto" style={{padding: "100px"}}>
+    <div className="container mx-auto container-custom">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {items.map((item, index) => (
           <div key={index} className="text-center">

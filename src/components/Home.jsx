@@ -7,7 +7,7 @@ import BtuCalculator from "./BtuCalculator";
 import Footer from "./Footer";
 import PartnerCompanies from "./Partners/Partner";
 import AboutCompany from "./AboutCompany ";
-import AirConditionerTypes from "./AirConditionerTypes";
+import AirConditionerTypes from "./AirConditionerTypes/AirConditionerTypes";
 
 function Home() {
   return (
