@@ -413,3 +413,74 @@
     cursor: pointer;
   }
 }
+
+
+.excel-container {
+  margin-top: 20px;
+  /* border: 1px solid #d0d7de; */
+  /* box-shadow: 0 1px 2px rgba(27, 31, 35, 0.04), 0 3px 6px rgba(27, 31, 35, 0.15); */
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #d0d7de;
+  background-color: #f6f8fa;
+}
+
+.tabs button {
+  background-color: #f6f8fa;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.3s;
+}
+
+.tabs button:hover {
+  background-color: #e1e4e8;
+}
+
+.tabs button.active {
+  background-color: white;
+  border: 1px solid #d0d7de;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  margin-top: -1px;
+}
+
+.sheet-content {
+  max-width: 100%;
+  overflow-x: auto;
+  background-color: white;
+  padding: 10px;
+}
+
+.sheet-content table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.sheet-content table td,
+.sheet-content table th {
+  border: 1px solid #d0d7de;
+  padding: 8px;
+  text-align: left;
+}
+
+.sheet-content table tr:nth-child(even) {
+  background-color: #f6f8fa;
+}
+
+.sheet-content table tr:hover {
+  background-color: #e1e4e8;
+}
+
+.sheet-content table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #0366d6;
+  color: white;
+}

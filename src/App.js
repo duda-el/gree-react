@@ -8,6 +8,7 @@ import ProductTemplate from "../src/components/Product_Template/ProductTemplate"
 import Loader from "./components/Loader";
 import ContactUs from "./components/ContactUs/ContactUs"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ExcelReader from "./components/excel/ExcelReader";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -20,7 +21,8 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <>
+        <div>
       {loading ? (
         <Loader loading={loading} />
       ) : (
@@ -35,6 +37,8 @@ function App() {
         </>
       )}
     </div>
+    {/* <ExcelReader /> */}
+    </>
   );
 }
 

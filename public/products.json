@@ -303,9 +303,10 @@
     {
       "id": 13,
       "src": "https://pngimg.com/uploads/air_conditioner/air_conditioner_PNG49.png",
+      "xlsx": "/base.xlsx",
       "price": "3100₾",
       "product_name": "FrostWave 60 Compact Desert Air Cooler 60-litres",
-      "power": "180BTU",
+      "power": "გარე დანაყოფების სიმძლავრე მერყეობს 8 კვტ-დან 18 კვტ-მდე, რაც იდეალურია მცირე ოფისებისთვის, ვილების, ბინებისა და მაღაზიებისთვის, რაც შესანიშნავს ხდის კომერციულ და საცხოვრებელ მიზნებს.",
       "cooling_range": "20°C - 26°C",
       "description": "Compact air cooler with high efficiency for small to medium rooms.",
       "model_name": "GREE SOYAL",
